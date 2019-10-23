@@ -13,4 +13,33 @@ html, body, #root, .App {
   width: 612px;
   background-color: white;
   margin: 0 auto;
+  padding: 20px 20px 40px 20px;
+}
+
+.grid-template {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas: 'contact contact' 'col-one col-two';
+  grid-gap: 16px;
+
+}
+
+.App p {
+  font-size: 16px;
+}
+
+.contact {
+  grid-area: contact;
+  background-color: lightblue;
+}
+
+.col-one {
+  grid-area: col-one;
+  background-color: tan;
+}
+
+.col-two {
+  grid-area: col-two;
+  background-color: lightgray
 }
