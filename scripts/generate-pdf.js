@@ -10,7 +10,7 @@ const puppeteer = require('puppeteer');
     path: '/Users/user/Desktop/alexandra-brinn-cv.pdf',
     printBackground: true,
     width: '612px',
-    height: '792',
+    height: '792px',
   })
   await browser.close();
 })()

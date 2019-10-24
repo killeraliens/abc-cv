@@ -4,9 +4,9 @@ import SectionText from './SectionText';
 import Skills from './Skills';
 import Contact from './Contact';
 import ProjectTitle from './ProjectTitle';
-import Date from './Date';
 import './App.css';
 import store from './store.js'
+import profileImg from './assets/alexandra-brinn-profile.jpg';
 
 
 function App() {
@@ -16,18 +16,31 @@ function App() {
       <div className="cv-pdf">
         <main className="grid-template">
           <div className="contact">
+            {/*<Contact items={store.contactArr} imgObj={store.profileImg} img={profileImg}/>*/}
              <Contact items={store.contactArr} />
           </div>
           <div className="col-one">
-            <section>
+
+            <section className="contact">
               {/*<SectionTitle title="Alexandra Brinn Campbell"/>*/}
               {/*<ProjectTitle title="Alexandra Brinn Campbell"/>*/}
-              <SectionText className="intro" text={store.about}/>
+              {/*<Contact items={store.contactArr} imgObj={store.profileImg} img={profileImg}/>*/}
+              {/*<SectionText className="intro" text={store.about} imgObj={store.profileImg} img={profileImg}/>*/}
+              <img src={profileImg} className="inline-circle-img" alt={store.profileImg.alt}/>
+              <SectionText className="intro" text={store.intro} />
+
+              <SectionText text={store.about} />
             </section>
+
+
+          </div>
+          <div className="col-two">
+
             <section>
               <SectionTitle title="Dev"/>
               <Skills skills={store.devSkills} />
             </section>
+
             <section>
               <SectionTitle title="UX & UI"/>
               <Skills skills={store.designSkills} />
@@ -35,30 +48,49 @@ function App() {
 
             <section>
               <SectionTitle title="Education"/>
-              {store.courses.map(course => {
-                return (<div className="course">
-                  <SectionTitle  className="date" title={course.date}/>
-                  <ProjectTitle title={course.title} />
-                </div>)
+              {store.courses.map((course, i) => {
+                return (
+                  <div className="course" key={i}>
+                    <SectionTitle  className="date" title={course.date}/>
+                    <ProjectTitle title={course.title} />
+                  </div>
+                )
               })}
             </section>
+
           </div>
-          <div className="col-two">
+        </main>
+      </div>
+
+    {/* -----PAGE TWO----- */}
+      <div className="cv-pdf">
+        <main className="grid-template">
+          <div className="contact">
+             <Contact items={store.contactArr} />
+          </div>
+          <div className="col-one">
+
             <section>
               <SectionTitle title="Projects"/>
-              {store.projects.map(project => {
-                return (<div className="project">
-                  <ProjectTitle title={project.title} link={project.link}/>
-                  <SectionText text={project.text}/>
-                  <SectionText text={project.stack}/>
-                </div>)
+              {store.projects.map((project, i) => {
+                return (
+                  <div className="project" key={i}>
+                    <ProjectTitle title={project.title} link={project.link}/>
+                    <SectionText text={project.text}/>
+                    <SectionText text={project.stack}/>
+                  </div>
+                )
               })}
             </section>
-                    <section>
+
+          </div>
+          <div className="col-two">
+
+            <section>
               <SectionTitle title="Experience"/>
-              {store.experiences.map(exp => {
+              {store.experiences.map((exp, i) => {
                 return(
-                  <div className="experience">
+                  <div className="experience" key={i}>
                     <SectionTitle className="date" title={exp.date} />
                     <ProjectTitle title={exp.title} />
                     <SectionText text={exp.text} />
@@ -66,6 +98,7 @@ function App() {
                 )
               })}
             </section>
+
           </div>
         </main>
       </div>

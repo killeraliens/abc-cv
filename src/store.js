@@ -10,9 +10,11 @@ export default {
     'Figma', 'Whimsical', 'Mindnode', 'AutoCad', 'user interviews & testing',
     'branding & creative content'
   ],
-  about: "Fullstack web developer coming from a background in industrial design and graphics. " +
-  "\n I love scripting digital experiences for people and can offer a range of both creative and technical skills. " +
-  "Always ready to work with any new tools for the job.",
+  intro: "Hi, I'm Alexandra - AKA Ali. This is my CV",
+  about: "Fullstack web developer coming from a background in industrial design and graphics. \
+  I love scripting digital experiences for people and can offer a range of both creative and technical skills. \
+  Always ready to work with any new tools for the job.",
+  profileImg: {src: "../assets/alexandra-brinn-profile.jpg", alt: "Portrait of Alexandra"},
   contactArr: [
     "ALEXANDRA BRINN CAMPBELL", "1+ (602) 625-2503", "Phoenix, Arizona",
     {href: 'mailto:AlexandraBrinnCampbell@gmail.com', label: 'AlexandraBrinnCampbell@gmail.com', targetBlank: false},
