@@ -21,8 +21,8 @@ function App() {
           <div className="col-one">
             <section>
               {/*<SectionTitle title="Alexandra Brinn Campbell"/>*/}
-              <ProjectTitle title="Alexandra Brinn Campbell"/>
-              <SectionText text={store.about}/>
+              {/*<ProjectTitle title="Alexandra Brinn Campbell"/>*/}
+              <SectionText className="intro" text={store.about}/>
             </section>
             <section>
               <SectionTitle title="Dev"/>

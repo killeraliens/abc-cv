@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default function SectionText({text}) {
+export default function SectionText({text, className}) {
   return(
-    <p className="SectionText">{text}</p>
+    <p className={`SectionText ${className}`}>{text}</p>
   )
 }
