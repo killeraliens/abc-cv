@@ -7,7 +7,7 @@ export default function Contact(props) {
       {props.items.map(item =>
         {
         return typeof item === 'object' && props.items[props.items.length - 1] !== item
-          ?  <React.Fragment><span>{React.createElement('a', {href: item.href, target: item.targetBlank ? '_blank' : null}, item.label)}</span>{'  '}</React.Fragment>
+          ?  <React.Fragment><span>{item.preLabel ? item.preLabel + ' ' : null}{React.createElement('a', {href: item.href, target: item.targetBlank ? '_blank' : null}, item.label)}</span>{'  '}</React.Fragment>
           : typeof item === 'object'
           ?  <React.Fragment><span>{React.createElement('a', {href: item.href, target: item.targetBlank ? '_blank' : null}, item.label)}</span></React.Fragment>
           : props.items[props.items.length - 1] === item

@@ -4,6 +4,7 @@ import SectionText from './SectionText';
 import Skills from './Skills';
 import Contact from './Contact';
 import ProjectTitle from './ProjectTitle';
+import Date from './Date';
 import './App.css';
 import store from './store.js'
 
@@ -44,7 +45,12 @@ function App() {
             </section>
             <section>
               <SectionTitle title="Education"/>
-
+              {store.courses.map(course => {
+                return (<div className="course">
+                  <SectionTitle  className="date" title={course.date}/>
+                  <ProjectTitle title={course.title} />
+                </div>)
+              })}
             </section>
             <section>
               <SectionTitle title="Experience"/>

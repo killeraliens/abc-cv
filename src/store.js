@@ -15,7 +15,7 @@ export default {
   "Always ready to work with any new tools for the job.",
   contactArr: [
     "ALEXANDRA BRINN CAMPBELL", "1+ (602) 625-2503", "Phoenix, Arizona", {href: 'mailto:AlexandraBrinnCampbell@gmail.com', label: 'AlexandraBrinnCampbell@gmail.com', targetBlank: false},
-    {href: 'https://github.com/killeraliens', label: 'GitHub user killeraliens'},  {href:'https://linkedin.com/in/alexandra-brinn-campbell', label: 'linkedin.com/in/alexandra-brinn-campbell', targetBlank: true} ,
+    {preLabel: "GitHub user", href: 'https://github.com/killeraliens', label: 'killeraliens'},  {href:'https://linkedin.com/in/alexandra-brinn-campbell', label: 'linkedin.com/in/alexandra-brinn-campbell', targetBlank: true} ,
     {href: 'https://killeraliens.github.io/alexandra-brinn/', label:'killeraliens.github.io/alexandra-brinn', targetBlank: true}
   ],
   projects: [
@@ -41,6 +41,40 @@ export default {
       github: {href: "https://github.com/killeraliens/goats-guide", label: "github.com/killeraliens/goats-guide"}
     }
   ],
+  courses: [
+    {title: "Thinkful JavaScript Node Coding Bootcamp", date: "May 2019 - Curr"},
+    {title: "Le Wagon London, Ruby on Rails Coding Bootcamp", date: "Jan - Mar 2019"},
+    {title: "General Assembly 8 week course in UX design", date: "Feb - Mar 2018"},
+    {title: "Emily Carr University, Vancouver BC", date: "BDES Industrial Design, 2007"},
+  ],
+  experiences: [
+    {
+      date: 'Apr 2015 - Jul 2018',
+      title: 'Burgeon Group',
+      role: 'Design Project Manager',
+      text: 'Design ideation & visuals for presentation. Ongoing project management & client communication. \
+      Technical drafting, construction & installation plan documents. Intermediary between client, design, and fabrication teams. ',
+      insta: {href: 'https://www.instagram.com/burgeongroup/', label: 'instagram @BurgeonGroup'}
+    },
+    {
+      date: '2012 - 2015',
+      title: 'Demi Coffee',
+      text: 'Developed and operated a small food & beverage concept with a partner. Great experience in customer service, creative offerings, fun with branding. Best cold brew.'
+      insta: {href: 'https://www.instagram.com/demicoffee/', label: 'instagram @DemiCoffee'}
+    },
+    {
+      date: '2012 - Current',
+      title: 'Curiotile',
+      text: 'Personal project in product design. Iterative flatpack designs in stainless and powedercoat steel, custom displays & storage solutions. Website coming soon.',
+    },
+    {
+      date: '2009 - 2013',
+      title: 'Ah Diós',
+      role: ' Freelance Graphics & Branding',
+      text: 'Collaborating with three others in web, film, and UX backgrounds. \
+        Brand development and various projects in graphic, signage, web, and packaging for Visual+Intent, Cartel Coffee Lab, Request Manufacturing, Sooh Media +'
+    }
 
+  ]
 
 }
