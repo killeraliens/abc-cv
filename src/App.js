@@ -32,6 +32,16 @@ function App() {
               <SectionTitle title="UX & UI"/>
               <Skills skills={store.designSkills} />
             </section>
+
+            <section>
+              <SectionTitle title="Education"/>
+              {store.courses.map(course => {
+                return (<div className="course">
+                  <SectionTitle  className="date" title={course.date}/>
+                  <ProjectTitle title={course.title} />
+                </div>)
+              })}
+            </section>
           </div>
           <div className="col-two">
             <section>
@@ -43,17 +53,17 @@ function App() {
                 </div>)
               })}
             </section>
-            <section>
-              <SectionTitle title="Education"/>
-              {store.courses.map(course => {
-                return (<div className="course">
-                  <SectionTitle  className="date" title={course.date}/>
-                  <ProjectTitle title={course.title} />
-                </div>)
-              })}
-            </section>
-            <section>
+                    <section>
               <SectionTitle title="Experience"/>
+              {store.experiences.map(exp => {
+                return(
+                  <div className="experience">
+                    <SectionTitle className="date" title={exp.date} />
+                    <ProjectTitle title={exp.title} />
+                    <SectionText text={exp.text} />
+                  </div>
+                )
+              })}
             </section>
           </div>
         </main>

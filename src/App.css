@@ -39,6 +39,11 @@ html, body, #root, .App {
   grid-area: contact;
 }
 
+.contact * {
+  font-size: 10px;
+  font-weight: bold;
+}
+
 .col-one {
   grid-area: col-one;
   max-width: 100%;

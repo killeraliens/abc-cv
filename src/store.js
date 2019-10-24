@@ -16,7 +16,7 @@ export default {
   contactArr: [
     "ALEXANDRA BRINN CAMPBELL", "1+ (602) 625-2503", "Phoenix, Arizona", {href: 'mailto:AlexandraBrinnCampbell@gmail.com', label: 'AlexandraBrinnCampbell@gmail.com', targetBlank: false},
     {preLabel: "GitHub user", href: 'https://github.com/killeraliens', label: 'killeraliens'},  {href:'https://linkedin.com/in/alexandra-brinn-campbell', label: 'linkedin.com/in/alexandra-brinn-campbell', targetBlank: true} ,
-    {href: 'https://killeraliens.github.io/alexandra-brinn/', label:'killeraliens.github.io/alexandra-brinn', targetBlank: true}
+    {preLabel: 'personal website', href: 'https://killeraliens.github.io/alexandra-brinn/', label:'killeraliens.github.io/alexandra-brinn', targetBlank: true}
   ],
   projects: [
     {
@@ -59,7 +59,7 @@ export default {
     {
       date: '2012 - 2015',
       title: 'Demi Coffee',
-      text: 'Developed and operated a small food & beverage concept with a partner. Great experience in customer service, creative offerings, fun with branding. Best cold brew.'
+      text: 'Developed and operated a small food & beverage concept with a partner. Great experience in customer service, creative offerings, fun with branding. Best cold brew.',
       insta: {href: 'https://www.instagram.com/demicoffee/', label: 'instagram @DemiCoffee'}
     },
     {
