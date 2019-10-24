@@ -50,6 +50,7 @@ function App() {
                 return (<div className="project">
                   <ProjectTitle title={project.title} link={project.link}/>
                   <SectionText text={project.text}/>
+                  <SectionText text={project.stack}/>
                 </div>)
               })}
             </section>
