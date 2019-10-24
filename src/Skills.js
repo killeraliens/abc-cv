@@ -1,15 +1,16 @@
 import React from 'react';
 
-export default function Skills(props) {
-  const contact = props.className === 'contactArr'
+export default function Skills({skills}) {
+  const bullet = <span className="bullet">•</span>;
+
   return(
-    <p>
-      {props.skills.map(skill =>
-        <span>{
-          props.skills[props.skills.length - 1] === skill
-          ? skill
-          : skill + `  •  `
-        }</span>)}
-    </p>
+    <p className="Skills">{skills.map(skill => {
+          const skillSpan = <span>{skill}</span>;
+           return skills[skills.length - 1] === skill
+           ? skillSpan
+           : <React.Fragment>{skillSpan}{bullet}</React.Fragment>
+    })}</p>
   )
 }
+
+

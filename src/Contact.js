@@ -3,7 +3,7 @@ import React from 'react';
 export default function Contact(props) {
 
   return(
-    <React.Fragment>
+    <p>
       {props.items.map(item =>
         <span>{
         typeof item === 'object'
@@ -12,6 +12,6 @@ export default function Contact(props) {
           ? item
           : item + `|`
         }</span>)}
-    </React.Fragment>
+    </p>
   )
 }

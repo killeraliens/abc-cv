@@ -3,6 +3,7 @@ import SectionTitle from './SectionTitle';
 import SectionText from './SectionText';
 import Skills from './Skills';
 import Contact from './Contact';
+import ProjectTitle from './ProjectTitle';
 import './App.css';
 import store from './store.js'
 
@@ -18,7 +19,8 @@ function App() {
           </div>
           <div className="col-one">
             <section>
-              <SectionTitle title="About"/>
+              {/*<SectionTitle title="Alexandra Brinn Campbell"/>*/}
+              <ProjectTitle title="Alexandra Brinn Campbell"/>
               <SectionText text={store.about}/>
             </section>
             <section>
@@ -29,13 +31,23 @@ function App() {
               <SectionTitle title="UX & UI"/>
               <Skills skills={store.designSkills} />
             </section>
+          </div>
+          <div className="col-two">
+            <section>
+              <SectionTitle title="Projects"/>
+              {store.projects.map(project => {
+                return (<div className="project">
+                  <ProjectTitle title={project.title}/>
+                  <SectionText text={project.text}/>
+                </div>)
+              })}
+            </section>
             <section>
               <SectionTitle title="Education"/>
             </section>
-          </div>
-          <div className="col-two">
-              <SectionTitle title="Projects"/>
+            <section>
               <SectionTitle title="Experience"/>
+            </section>
           </div>
         </main>
       </div>
