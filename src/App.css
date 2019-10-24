@@ -56,6 +56,19 @@ html, body, #root, .App {
 }*/
 
 /* end of grid */
+h2, h3 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: orangered;
+  font-weight: bold;
+}
+
+section {
+  margin-bottom: 36px;
+}
 
 .SectionTitle {
   font-size: 10px;
@@ -63,7 +76,7 @@ html, body, #root, .App {
   letter-spacing: 1px;
 }
 
-.ProjectTitle {
+.ProjectTitle * {
   font-size: 14px;
 }
 
@@ -73,11 +86,12 @@ html, body, #root, .App {
 
 .App span {
   display: inline-block;
+  margin-right: 8px;
 }
 
-.App span.bullet {
+/*.App span.bullet {
   margin: 0 8px;
-}
+}*/
 
 .Skills {
   /*text-align: center;*/

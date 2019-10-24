@@ -1,7 +1,13 @@
 import React from 'react';
 
-export default function ProjectTitle({title}) {
+export default function ProjectTitle({title, link}) {
+  const linkText = link
+    ? <React.Fragment>{' | '}<a href={link.href} target='_blank'>{link.label}</a></React.Fragment>
+    : null;
+
   return(
-    <h3 className="ProjectTitle">{title}</h3>
+    <div className="ProjectTitle">
+      <h3 >{title}{linkText}</h3>
+    </div>
   )
 }

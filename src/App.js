@@ -37,13 +37,14 @@ function App() {
               <SectionTitle title="Projects"/>
               {store.projects.map(project => {
                 return (<div className="project">
-                  <ProjectTitle title={project.title}/>
+                  <ProjectTitle title={project.title} link={project.link}/>
                   <SectionText text={project.text}/>
                 </div>)
               })}
             </section>
             <section>
               <SectionTitle title="Education"/>
+
             </section>
             <section>
               <SectionTitle title="Experience"/>

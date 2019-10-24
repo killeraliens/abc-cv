@@ -11,11 +11,12 @@ export default {
     'branding & creative content'
   ],
   about: "Fullstack web developer coming from a background in industrial design and graphics. " +
-  "I love scripting digital experiences for people and can offer a range of both creative and technical skills. " +
+  "\n I love scripting digital experiences for people and can offer a range of both creative and technical skills. " +
   "Always ready to work with any new tools for the job.",
   contactArr: [
-    "ALEXANDRA BRINN CAMPBELL", "1+ (602) 625-2503", "Phoenix, Arizona", {href: 'mailto:AlexandraBrinnCampbell@gmail.com', label: 'AlexandraBrinnCampbell@gmail.com', targetBlank: true},
-    "GitHub KILLERALIENS",  {href:'https://linkedin.com/in/alexandra-brinn-campbell', label: 'linkedin.com/in/alexandra-brinn-campbell', targetBlank: true} , {href: 'https://killeraliens.github.io/alexandra-brinn/', label:'killeraliens.github.io/alexandra-brinn', targetBlank: true}
+    "ALEXANDRA BRINN CAMPBELL", "1+ (602) 625-2503", "Phoenix, Arizona", {href: 'mailto:AlexandraBrinnCampbell@gmail.com', label: 'AlexandraBrinnCampbell@gmail.com', targetBlank: false},
+    {href: 'https://github.com/killeraliens', label: 'GitHub user killeraliens'},  {href:'https://linkedin.com/in/alexandra-brinn-campbell', label: 'linkedin.com/in/alexandra-brinn-campbell', targetBlank: true} ,
+    {href: 'https://killeraliens.github.io/alexandra-brinn/', label:'killeraliens.github.io/alexandra-brinn', targetBlank: true}
   ],
   projects: [
     {
