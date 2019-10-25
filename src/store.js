@@ -15,14 +15,15 @@ export default {
   I love scripting digital experiences for people and can offer a range of both creative and technical skills. \
   Always ready to work with any new tools for the job.",
   profileImg: {src: "./assets/alexandra-brinn-profile.jpg", alt: "Portrait of Alexandra"},
-  contactArr: [
-    "ALEXANDRA BRINN CAMPBELL", "1+ (602) 625-2503", "Phoenix, Arizona",
-    {href: 'mailto:AlexandraBrinnCampbell@gmail.com', label: 'AlexandraBrinnCampbell@gmail.com', targetBlank: false},
-    {preLabel: "GitHub user", href: 'https://github.com/killeraliens', label: 'killeraliens'},
-    {preLabel: "LinkedIn", href:'https://linkedin.com/in/alexandra-brinn-campbell', label: 'linkedin.com/in/alexandra-brinn-campbell', targetBlank: true} ,
-    {preLabel: 'website', href: 'https://killeraliens.github.io/alexandra-brinn/', label:'killeraliens.github.io/alexandra-brinn', targetBlank: true}
-  ],
-  website: {preLabel: 'website', href: 'https://killeraliens.github.io/alexandra-brinn/', label:'killeraliens.github.io/alexandra-brinn', targetBlank: true},
+  contact: {
+    name: "ALEXANDRA BRINN CAMPBELL",
+    phone:  "1+ (602) 625-2503",
+    location: "Phoenix, Arizona",
+    email: {preLabel: "email", href: 'mailto:AlexandraBrinnCampbell@gmail.com', label: 'AlexandraBrinnCampbell@gmail.com', targetBlank: false},
+    github: {preLabel: "GitHub user", href: 'https://github.com/killeraliens', label: 'killeraliens'},
+    linkedin: {preLabel: "LinkedIn", href:'https://linkedin.com/in/alexandra-brinn-campbell', label: 'linkedin.com/in/alexandra-brinn-campbell', targetBlank: true} ,
+    website: {preLabel: 'website', href: 'https://killeraliens.github.io/alexandra-brinn/', label:'killeraliens.github.io/alexandra-brinn', targetBlank: true}
+  },
   projects: [
     {
       title: "Doctors Near Me",
@@ -39,19 +40,19 @@ export default {
       text: "Goat’s Guide is a heavy metal event & venue database concept as well as an ongoing study in UX design. \
         I am currently reworking this project using React, Express/Node to reduce app loading time, \
         and encourage user participation with the integration of Facebook’s Graph API.",
-      stack: "The current live version is built with Ruby on Rails, and utilizes HTML-scraping gems such as Watir and Nokogiri, \
+      stack: "Current version is built with Ruby on Rails, and utilizes HTML-scraping gems such as Watir and Nokogiri, \
         along with custom background tasks/Sidekiq to collect event data. Uses Devise gem for authentication. \
         PostgreSQL database. Deployed with Heroku.",
       link: {href: "http://www.goatsguide.com", label: "www.goatsguide.com"},
       github: {href: "https://github.com/killeraliens/goats-guide", label: "github.com/killeraliens/goats-guide"}
     },
-    {
-      title: "Excuse Engine",
-      text: "An app that generates excuses for you based on your location. A great experience in teamwork while using Github/Heroku. Thanks to Janie, Maddie, Mark.",
-      stack: "Built with Ruby on Rails, JavaScript, traffic & London transport APIs, HTML and CSS",
-      link: {href: "http://www.excuse-engine.com/", label: "excuse-engine.com"},
-      github: {href: "https://github.com/maddielewis/excuse-engine", label: "github.com/maddielewis/excuse-engine"}
-    },
+    // {
+    //   title: "Excuse Engine",
+    //   text: "An app that generates excuses for you based on your location. A great experience in teamwork while using Github/Heroku. Thanks to Janie, Maddie, Mark.",
+    //   stack: "Built with Ruby on Rails, JavaScript, traffic & London transport APIs, HTML and CSS",
+    //   link: {href: "http://www.excuse-engine.com/", label: "excuse-engine.com"},
+    //   github: {href: "https://github.com/maddielewis/excuse-engine", label: "github.com/maddielewis/excuse-engine"}
+    // },
   ],
   courses: [
     {title: "Thinkful JavaScript Node Coding Bootcamp", date: "May 2019 - Curr"},

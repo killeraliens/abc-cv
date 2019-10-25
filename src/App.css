@@ -23,7 +23,7 @@ html, body, #root, .App {
   height: 792px;
   width: 612px;
   background-color: white;
-  margin: 40px auto;
+  margin: 0 auto;
   padding: 36px 36px 40px 36px;
 }
 
@@ -94,6 +94,11 @@ section {
 .SectionText.intro {
   font-weight: bold;
   margin-top: 0;
+}
+
+.contact-li {
+  font-weight: bold;
+  font-size: 10px;
 }
 
 .inline-circle-img {

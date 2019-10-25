@@ -1,22 +1,18 @@
 import React from 'react';
 
-export default function Contact(props) {
-  const inlineCircleImg = props.imgObj
-    ? <img src={props.img} className="inline-circle-img" alt={props.imgObj.alt}/>
-    : null
-
+export default function Contact({contactObj}) {
+  const contactObjArr = Object.keys(contactObj);
   return(
     <p>
-      {inlineCircleImg}
-      {props.items.map((item, i) =>
+      {contactObjArr.map((item, i) =>
         {
-        return typeof item === 'object' && props.items[props.items.length - 1] !== item
-          ?  <React.Fragment key={i}><span>{item.preLabel ? item.preLabel + ' ' : null}{React.createElement('a', {href: item.href, target: item.targetBlank ? '_blank' : null}, item.label)}</span>{'  '}</React.Fragment>
-          : typeof item === 'object'
-          ?  <React.Fragment key={i}><span>{item.preLabel ? item.preLabel + ' ' : null}{React.createElement('a', {href: item.href, target: item.targetBlank ? '_blank' : null}, item.label)}</span></React.Fragment>
-          : props.items[props.items.length - 1] === item
-          ? <span>item</span>
-          : <React.Fragment key={i}><span>{item}</span>{'  '}</React.Fragment>
+        return typeof contactObj[item] === 'object' && contactObjArr[contactObjArr.length - 1] !== contactObj[item]
+          ?  <React.Fragment key={i}><span>{contactObj[item].preLabel ? contactObj[item].preLabel + ' ' : null}{React.createElement('a', {href: contactObj[item].href, target: contactObj[item].targetBlank ? '_blank' : null}, contactObj[item].label)}</span>{'  '}</React.Fragment>
+          : typeof contactObj[item] === 'object'
+          ?  <React.Fragment key={i}><span>{contactObj[item].preLabel ? contactObj[item].preLabel + ' ' : null}{React.createElement('a', {href: contactObj[item].href, target: contactObj[item].targetBlank ? '_blank' : null}, contactObj[item].label)}</span></React.Fragment>
+          : contactObjArr[contactObjArr.length - 1] === contactObj[item]
+          ? <span>contactObj[item]</span>
+          : <React.Fragment key={i}><span>{contactObj[item]}</span>{'  '}</React.Fragment>
         })}
     </p>
   )
