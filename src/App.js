@@ -92,7 +92,7 @@ function App() {
                 return(
                   <div className="experience" key={i}>
                     <SectionTitle className="date" title={exp.date} />
-                    <ProjectTitle title={exp.title} />
+                    <ProjectTitle title={exp.title} link={exp.insta} role={exp.role}/>
                     <SectionText text={exp.text} />
                   </div>
                 )

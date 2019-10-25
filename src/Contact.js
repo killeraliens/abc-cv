@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Contact(props) {
   const inlineCircleImg = props.imgObj
-    ? <img src={props.img} className="inline-circle-img" alt={props.imgObj.ariaLabel}/>
+    ? <img src={props.img} className="inline-circle-img" alt={props.imgObj.alt}/>
     : null
 
   return(

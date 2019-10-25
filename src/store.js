@@ -10,11 +10,11 @@ export default {
     'Figma', 'Whimsical', 'Mindnode', 'AutoCad', 'user interviews & testing',
     'branding & creative content'
   ],
-  intro: "Hi, I'm Alexandra - AKA Ali. This is my CV",
-  about: "Fullstack web developer coming from a background in industrial design and graphics. \
+  intro: "Alexandra Campbell - AKA Ali. Designer gone full stack web developer.",
+  about: "Dedicated programmer coming from a background in industrial design and graphics. \
   I love scripting digital experiences for people and can offer a range of both creative and technical skills. \
   Always ready to work with any new tools for the job.",
-  profileImg: {src: "../assets/alexandra-brinn-profile.jpg", alt: "Portrait of Alexandra"},
+  profileImg: {src: "./assets/alexandra-brinn-profile.jpg", alt: "Portrait of Alexandra"},
   contactArr: [
     "ALEXANDRA BRINN CAMPBELL", "1+ (602) 625-2503", "Phoenix, Arizona",
     {href: 'mailto:AlexandraBrinnCampbell@gmail.com', label: 'AlexandraBrinnCampbell@gmail.com', targetBlank: false},
@@ -22,6 +22,7 @@ export default {
     {preLabel: "LinkedIn", href:'https://linkedin.com/in/alexandra-brinn-campbell', label: 'linkedin.com/in/alexandra-brinn-campbell', targetBlank: true} ,
     {preLabel: 'website', href: 'https://killeraliens.github.io/alexandra-brinn/', label:'killeraliens.github.io/alexandra-brinn', targetBlank: true}
   ],
+  website: {preLabel: 'website', href: 'https://killeraliens.github.io/alexandra-brinn/', label:'killeraliens.github.io/alexandra-brinn', targetBlank: true},
   projects: [
     {
       title: "Doctors Near Me",
@@ -43,7 +44,14 @@ export default {
         PostgreSQL database. Deployed with Heroku.",
       link: {href: "http://www.goatsguide.com", label: "www.goatsguide.com"},
       github: {href: "https://github.com/killeraliens/goats-guide", label: "github.com/killeraliens/goats-guide"}
-    }
+    },
+    {
+      title: "Excuse Engine",
+      text: "An app that generates excuses for you based on your location. A great experience in teamwork while using Github/Heroku. Thanks to Janie, Maddie, Mark.",
+      stack: "Built with Ruby on Rails, JavaScript, traffic & London transport APIs, HTML and CSS",
+      link: {href: "http://www.excuse-engine.com/", label: "excuse-engine.com"},
+      github: {href: "https://github.com/maddielewis/excuse-engine", label: "github.com/maddielewis/excuse-engine"}
+    },
   ],
   courses: [
     {title: "Thinkful JavaScript Node Coding Bootcamp", date: "May 2019 - Curr"},
@@ -56,8 +64,7 @@ export default {
       date: 'Apr 2015 - Jul 2018',
       title: 'Burgeon Group',
       role: 'Design Project Manager',
-      text: 'Design ideation & visuals for presentation. Ongoing project management & client communication. \
-      Technical drafting, construction & installation plan documents. Intermediary between client, design, and fabrication teams. ',
+      text: 'Burgeon group is a niche design & build firm with a stellar international reputation for the concept, design, and fabrication of children’s experience in the public library space. My role as design project manager included coordination between  client , design, and fabrication departments.  I worked closely with the CEO/lead designer contributing to client communications, design, and marketing, as well as executed the technical drafting, construction & installation plan documents for our inhouse fabrication teams.',
       insta: {href: 'https://www.instagram.com/burgeongroup/', label: 'instagram @BurgeonGroup'}
     },
     {
