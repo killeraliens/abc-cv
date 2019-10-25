@@ -7,16 +7,22 @@ import ProjectTitle from './ProjectTitle';
 import './App.css';
 import store from './store.js'
 import profileImg from './assets/alexandra-brinn-profile.jpg';
+import cvPdf from './assets/alexandra-brinn-campbell-cv.pdf';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faFileDownload } from '@fortawesome/free-solid-svg-icons'
 
 
 function App() {
 
   return (
-    <div className="App">
+    <div className="App live">
+      <header className="live-only download-header">
+        <a className="live-only" href={cvPdf} rel="noopener noreferrer" target="_blank" download> <FontAwesomeIcon icon={faFileDownload}></FontAwesomeIcon> download my CV</a>
+      </header>
+
+      {/* -----PAGE ONE----- */}
       <div className="cv-pdf">
         <main className="grid-template">
           <div className="contact">
@@ -51,9 +57,9 @@ function App() {
                     <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
                   </a>
                   {'  '}
-                  <a href={store.contact.website.href} aria-label="link to my website">
+                  {/*<a href={store.contact.website.href} aria-label="link to my website">
                     <span>site</span>
-                  </a>
+                  </a>*/}
                 </li>
               </ul>
             </section>
@@ -92,7 +98,7 @@ function App() {
       <div className="cv-pdf">
         <main className="grid-template">
 
-          <div className="contact">
+          <div className="contact live-only large">
              <Contact contactObj={store.contact} />
           </div>
 

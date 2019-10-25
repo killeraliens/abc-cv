@@ -7,7 +7,7 @@ const puppeteer = require('puppeteer');
   await page.goto('http://localhost:3000/');
   await page.emulateMedia('screen');
   await page.pdf({
-    path: '/Users/user/Desktop/alexandra-brinn-cv.pdf',
+    path: '/Users/user/code/killeraliens/alexandra-brinn-cv/src/assets/alexandra-brinn-campbell-cv.pdf',
     printBackground: true,
     width: '612px',
     height: '792px',
