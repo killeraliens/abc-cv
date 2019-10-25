@@ -14,7 +14,10 @@ html, body, #root, .App {
   /*padding: 40px 0;*/
   font-size: 14px;
 }
-
+/*
+.App p, .App li, .App h3 {
+  line-height: 18px;
+}*/
 
 /* Grid */
 
@@ -31,7 +34,7 @@ html, body, #root, .App {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 50px 1fr;
   grid-template-areas: 'contact contact' 'col-one col-two';
   grid-gap: 24px;
 }
@@ -80,6 +83,11 @@ section {
   margin-bottom: 36px;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 .SectionTitle {
   font-size: 10px;
   text-transform: uppercase;
@@ -96,9 +104,16 @@ section {
   margin-top: 0;
 }
 
-.contact-li {
+/*.contact-li {
   font-weight: bold;
   font-size: 10px;
+}*/
+.contact-ul a {
+  font-size: 18px;
+}
+
+.contact-ul li {
+  /*line-height: 22px;*/
 }
 
 .inline-circle-img {

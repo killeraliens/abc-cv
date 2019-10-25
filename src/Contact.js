@@ -3,7 +3,7 @@ import React from 'react';
 export default function Contact({contactObj}) {
   const contactObjArr = Object.keys(contactObj);
   return(
-    <p>
+    <div className="Contact">
       {contactObjArr.map((item, i) =>
         {
         return typeof contactObj[item] === 'object' && contactObjArr[contactObjArr.length - 1] !== contactObj[item]
@@ -14,6 +14,6 @@ export default function Contact({contactObj}) {
           ? <span>contactObj[item]</span>
           : <React.Fragment key={i}><span>{contactObj[item]}</span>{'  '}</React.Fragment>
         })}
-    </p>
+    </div>
   )
 }

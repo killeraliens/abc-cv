@@ -55,8 +55,8 @@ export default {
     // },
   ],
   courses: [
-    {title: "Thinkful JavaScript Node Coding Bootcamp", date: "May 2019 - Curr"},
-    {title: "Le Wagon London, Ruby on Rails Coding Bootcamp", date: "Jan - Mar 2019"},
+    {title: "Thinkful. JavaScript, Node Fullstack Engineering Program", date: "May 2019 - Curr"},
+    {title: "Le Wagon, London. Ruby on Rails Coding Bootcamp", date: "Jan - Mar 2019"},
     {title: "General Assembly 8 week course in UX design", date: "Feb - Mar 2018"},
     {title: "Emily Carr University, Vancouver BC", date: "BDES Industrial Design, 2007"},
   ],

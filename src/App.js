@@ -8,6 +8,10 @@ import './App.css';
 import store from './store.js'
 import profileImg from './assets/alexandra-brinn-profile.jpg';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
 
 function App() {
 
@@ -28,18 +32,31 @@ function App() {
               <SectionText text={store.about} />
             </section>
 
-{/*            <section>
+         <section>
               <SectionTitle title="Contact"/>
-                <ul>
-                  {store.contactArr.map((item, i) => {
-                    return (<li key={i} className="contact-li">{
-                      typeof item === 'string'
-                        ? <span>{item}</span>
-                        : <span>{item.preLabel}{React.createElement('a', {href: item.href, target: item.targetBlank ? '_blank' : null}, item.label)}</span>
-                    }</li>)
-                  })}
-                    </ul>
-            </section>*/}
+              <ul className="contact-ul">
+                <li><b>Ali Campbell</b></li>
+                <li><b>{store.contact.phone}</b></li>
+                <li><b>{store.contact.email.label}</b></li>
+                <li style={{marginTop: 8}}>
+                  <a href={store.contact.github.href} aria-label="link to my Github">
+                    <FontAwesomeIcon icon={faGithubSquare}></FontAwesomeIcon>
+                  </a>
+                  {'  '}
+                  <a href={store.contact.linkedin.href} aria-label="link to my LinkedIn">
+                    <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+                  </a>
+                  {'  '}
+                  <a href={store.contact.email.href} aria-label="link to my Email">
+                    <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+                  </a>
+                  {'  '}
+                  <a href={store.contact.website.href} aria-label="link to my website">
+                    <span>site</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
 
 
           </div>
@@ -91,8 +108,9 @@ function App() {
                   </div>
                 )
               })}
-              <p><b>You can find more projects on my</b>
+              <p><b>You can find more projects on my</b>{' '}
                 <a href={store.contact.website.href} target="_blank" rel="noopener noreferrer">website</a>
+              {' '}
               <b>at {store.contact.website.label}</b></p>
             </section>
           </div>
