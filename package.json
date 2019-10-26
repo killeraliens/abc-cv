@@ -1,4 +1,5 @@
 {
+  "homepage": "http://killeraliens.github.io/alexandra-brinn-cv",
   "name": "alexandra-brinn-cv",
   "version": "0.1.0",
   "private": true,
@@ -42,6 +43,5 @@
     "@babel/node": "^7.6.3",
     "gh-pages": "^2.1.1",
     "puppeteer": "^2.0.0"
-  },
-  "homepage": "http://yuribenjamin.github.io/my-app"
+  }
 }
