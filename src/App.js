@@ -98,7 +98,7 @@ function App() {
       <div className="cv-pdf">
         <main className="grid-template">
 
-          <div className="contact live-only large">
+          <div className="contact live-only-large">
              <Contact contactObj={store.contact} />
           </div>
 

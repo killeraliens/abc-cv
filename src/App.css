@@ -77,6 +77,14 @@ html, body, #root, .App {
   grid-area: col-two;
 }
 
+ .cv-pdf:nth-of-type(2) {
+    padding-top: 56px;
+  }
+
+ .App.live .cv-pdf:nth-of-type(2) {
+    padding-top: 36px;
+  }
+
 @media screen and (max-width: 612px) {
   .App.live .grid-template {
     grid-template-columns: 1fr;
@@ -98,7 +106,7 @@ html, body, #root, .App {
     padding-bottom: 0px;
   }
 
-  .App.live .live-only.large {
+  .App.live .live-only-large {
     display: none;
   }
 }
