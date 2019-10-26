@@ -26,7 +26,6 @@ function App() {
       <div className="cv-pdf">
         <main className="grid-template">
           <div className="contact">
-            {/*<Contact items={store.contactArr} imgObj={store.profileImg} img={profileImg}/>*/}
              <Contact contactObj={store.contact} />
           </div>
           <div className="col-one">
@@ -38,7 +37,7 @@ function App() {
               <SectionText text={store.about} />
             </section>
 
-         <section>
+            <section>
               <SectionTitle title="Contact"/>
               <ul className="contact-ul">
                 <li><b>Ali Campbell</b></li>
