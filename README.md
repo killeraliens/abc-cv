@@ -9,7 +9,7 @@ Created with React and Pupeteer.
 
 ### Dev Mode
 Easy to update resume. Allows me to generate the downloadable pdf, based on the sites' current HTML & CSS file state.
-![How to update the PDF dev mode, animated gif](/src/assets/cv-pdf-gnerate.gif)
+![How to update the PDF dev mode, animated gif](/src/assets/cv-pdf-generate.gif)
 
 ### Live Version
 View my CV. Download it! Formatted for mobile too.
