@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.fa6048ae.chunk.css",
-    "main.js": "/my-app/static/js/main.7fd34bae.chunk.js",
-    "main.js.map": "/my-app/static/js/main.7fd34bae.chunk.js.map",
-    "runtime-main.js": "/my-app/static/js/runtime-main.c55292a4.js",
-    "runtime-main.js.map": "/my-app/static/js/runtime-main.c55292a4.js.map",
-    "static/js/2.18bdca02.chunk.js": "/my-app/static/js/2.18bdca02.chunk.js",
-    "static/js/2.18bdca02.chunk.js.map": "/my-app/static/js/2.18bdca02.chunk.js.map",
-    "index.html": "/my-app/index.html",
-    "precache-manifest.5dfe93c5bd67f814e60cdfd059c9bad6.js": "/my-app/precache-manifest.5dfe93c5bd67f814e60cdfd059c9bad6.js",
-    "service-worker.js": "/my-app/service-worker.js",
-    "static/css/main.fa6048ae.chunk.css.map": "/my-app/static/css/main.fa6048ae.chunk.css.map",
-    "static/media/alexandra-brinn-campbell-cv.pdf": "/my-app/static/media/alexandra-brinn-campbell-cv.8e731084.pdf",
-    "static/media/alexandra-brinn-profile.jpg": "/my-app/static/media/alexandra-brinn-profile.ae38706a.jpg"
+    "main.css": "/alexandra-brinn-cv/static/css/main.fa6048ae.chunk.css",
+    "main.js": "/alexandra-brinn-cv/static/js/main.a87336cf.chunk.js",
+    "main.js.map": "/alexandra-brinn-cv/static/js/main.a87336cf.chunk.js.map",
+    "runtime-main.js": "/alexandra-brinn-cv/static/js/runtime-main.cb85bc1a.js",
+    "runtime-main.js.map": "/alexandra-brinn-cv/static/js/runtime-main.cb85bc1a.js.map",
+    "static/js/2.18bdca02.chunk.js": "/alexandra-brinn-cv/static/js/2.18bdca02.chunk.js",
+    "static/js/2.18bdca02.chunk.js.map": "/alexandra-brinn-cv/static/js/2.18bdca02.chunk.js.map",
+    "index.html": "/alexandra-brinn-cv/index.html",
+    "precache-manifest.d8275dd53b53ad9d4f1388d387c19f32.js": "/alexandra-brinn-cv/precache-manifest.d8275dd53b53ad9d4f1388d387c19f32.js",
+    "service-worker.js": "/alexandra-brinn-cv/service-worker.js",
+    "static/css/main.fa6048ae.chunk.css.map": "/alexandra-brinn-cv/static/css/main.fa6048ae.chunk.css.map",
+    "static/media/alexandra-brinn-campbell-cv.pdf": "/alexandra-brinn-cv/static/media/alexandra-brinn-campbell-cv.8e731084.pdf",
+    "static/media/alexandra-brinn-profile.jpg": "/alexandra-brinn-cv/static/media/alexandra-brinn-profile.ae38706a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c55292a4.js",
+    "static/js/runtime-main.cb85bc1a.js",
     "static/js/2.18bdca02.chunk.js",
     "static/css/main.fa6048ae.chunk.css",
-    "static/js/main.7fd34bae.chunk.js"
+    "static/js/main.a87336cf.chunk.js"
   ]
 }
