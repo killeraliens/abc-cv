@@ -27,7 +27,7 @@ function App() {
         <main className="grid-template">
 
           <div className="contact-lft">
-                     <section>
+            <section>
               <ul className="contact-ul" style={{marginTop: 0}}>
                 <li><b>Alexandra Campbell</b></li>
                 <li><b>{store.contact.phone}</b></li>
@@ -72,9 +72,10 @@ function App() {
             <section>
               {/*<SectionText className="intro" text={store.intro} />
               <SectionText text={store.about} />*/}
-              <p style={{marginTop: 0}}>
+              <p style={{marginTop: 0, fontStyle: 'italic'}}>
                 {/*<b>{store.intro}</b>*/}
                 {' '}
+                {/*<b>{store.about}</b>*/}
                 {store.about}
               </p>
             </section>
@@ -88,7 +89,7 @@ function App() {
               <SectionTitle title="UX & UI"/>
               <Skills skills={store.designSkills} />
             </section>
-            <section>
+            <section style={{marginBottom: 0}}>
               <SectionTitle title="Projects"/>
               {store.projects.map((project, i) => {
                 return (
@@ -121,7 +122,7 @@ function App() {
               })}
             </section>
 
-            <section>
+            <section style={{marginBottom: 0}}>
               <SectionTitle title="Education"/>
               {store.courses.map((course, i) => {
                 return (
@@ -138,50 +139,6 @@ function App() {
         </main>
       </div>
 
-    {/* -----PAGE TWO----- */}
-      <div className="cv-pdf">
-        <main className="grid-template">
-
-          {/*<div className="contact live-only-large">
-             <Contact contactObj={store.contact} />
-          </div>*/}
-
-          <div className="col-one">
-            <section>
-              <SectionTitle title="Projects"/>
-              {store.projects.map((project, i) => {
-                return (
-                  <div className="project" key={i}>
-                    <ProjectTitle title={project.title} link={project.link}/>
-                    <SectionText text={project.text}/>
-                    <SectionText text={project.stack} project={project} />
-                  </div>
-                )
-              })}
-              <p><b>You can find more projects on my</b>{' '}
-                <a href={store.contact.website.href} target="_blank" rel="noopener noreferrer">website</a>
-              {' '}
-              <b>at {store.contact.website.label}</b></p>
-            </section>
-          </div>
-
-          <div className="col-two">
-            <section>
-              <SectionTitle title="Experience"/>
-              {store.experiences.map((exp, i) => {
-                return(
-                  <div className="experience" key={i}>
-                    <SectionTitle className="date" title={exp.date} />
-                    <ProjectTitle title={exp.title} link={exp.insta} role={exp.role}/>
-                    <SectionText text={exp.text} />
-                  </div>
-                )
-              })}
-            </section>
-          </div>
-
-        </main>
-      </div>
     </div>
   );
 }

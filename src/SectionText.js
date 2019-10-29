@@ -8,7 +8,7 @@ export default function SectionText({text, className, imgObj, img, project}) {
     : null;
 
   const gitHubProject = project
-    ? <a href={project.github.href} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faGithub}/> </a>
+    ? <a href={project.github.href} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faGithub}/> View on GitHub{' '}</a>
     : null;
 
   return(
