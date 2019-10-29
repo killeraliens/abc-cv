@@ -55,6 +55,7 @@ html, body, #root, .App {
 .App.live .cv-pdf {
   margin-top: 20px;
   height: auto;
+  padding-bottom: 0px;
 }
 
 
@@ -123,9 +124,7 @@ html, body, #root, .App {
     padding-top: 0px;
   }
 
-  .App.live .cv-pdf:nth-of-type(1) {
-    padding-bottom: 0px;
-  }
+
 
   .App.live .live-only-large {
     display: none;
@@ -148,7 +147,7 @@ section {
 }
 
 .App.live section {
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
 
 ul {

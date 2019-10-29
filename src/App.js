@@ -89,7 +89,7 @@ function App() {
               <SectionTitle title="UX & UI"/>
               <Skills skills={store.designSkills} />
             </section>
-            <section style={{marginBottom: 0}}>
+            <section>
               <SectionTitle title="Projects"/>
               {store.projects.map((project, i) => {
                 return (
@@ -100,10 +100,10 @@ function App() {
                   </div>
                 )
               })}
-              <p><b>You can find more projects on my</b>{' '}
-                <a href={store.contact.website.href} target="_blank" rel="noopener noreferrer">website</a>
-              {' '}
-              <b>at {store.contact.website.label}</b></p>
+              <p><b>You can find more projects on my website at
+                {' '}
+                <a href={store.contact.website.href} target="_blank" rel="noopener noreferrer">{store.contact.website.label}</a>
+              </b></p>
             </section>
 
           </div>
@@ -122,7 +122,7 @@ function App() {
               })}
             </section>
 
-            <section style={{marginBottom: 0}}>
+            <section>
               <SectionTitle title="Education"/>
               {store.courses.map((course, i) => {
                 return (
