@@ -10,9 +10,13 @@ html, body, #root, .App {
   right: 0;
 }
 
-.App {
-  font-size: 14px;
+.App, .ProjectTitle * {
+  font-size: 11px;
 }
+
+/*.App.live, .App.live .ProjectTitle * {
+  font-size: 14px;
+}*/
 
 .App .live-only {
   display: none;
@@ -33,6 +37,10 @@ html, body, #root, .App {
   margin-right: 6px;
 }
 
+.contact-ul {
+  line-height: 18px;
+}
+
 /* Grid */
 
 .cv-pdf {
@@ -49,17 +57,28 @@ html, body, #root, .App {
   margin-top: 20px;
 }
 
+
+
 .grid-template {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 1fr;
-  grid-template-areas: 'contact contact' 'col-one col-two';
+  grid-template-rows: 110px 1fr;
+  /*grid-template-rows: auto auto;*/
+  grid-template-areas: 'contact-lft contact-rt' 'col-one col-two' ;
   grid-gap: 24px;
 }
 
 .contact {
   grid-area: contact;
+}
+
+.contact-lft {
+  grid-area: contact-lft;
+}
+
+.contact-rt {
+  grid-area: contact-rt;
 }
 
 .contact span {
@@ -127,7 +146,7 @@ a {
 }
 
 section {
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 
 ul {
@@ -136,14 +155,15 @@ ul {
 }
 
 .SectionTitle {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 14px;
+  /*text-transform: uppercase;*/
+  /*letter-spacing: 1px;*/
 }
 
 .SectionTitle.date {
-  color: darkgray;
-  display: inline;
+  color: gray;
+   font-size: 10px;
+   margin-bottom: 0;
 }
 
 .SectionText.intro {
@@ -164,9 +184,6 @@ ul {
 
 }
 
-.ProjectTitle * {
-  font-size: 14px;
-}
 
 .App span {
   display: inline-block;
