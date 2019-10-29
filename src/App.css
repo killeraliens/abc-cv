@@ -159,7 +159,7 @@ ul {
   font-size: 14px;
   /*text-transform: uppercase;*/
   /*letter-spacing: 1px;*/
-  color: gray;
+  /*color: gray;*/
 }
 
 .App.live .SectionTitle:not(.date) {
