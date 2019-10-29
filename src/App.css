@@ -63,7 +63,7 @@ html, body, #root, .App {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 110px 1fr;
+  grid-template-rows: 100px 1fr;
   /*grid-template-rows: auto auto;*/
   grid-template-areas: 'contact-lft contact-rt' 'col-one col-two' ;
   grid-gap: 24px;
