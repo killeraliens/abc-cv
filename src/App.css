@@ -10,7 +10,11 @@ html, body, #root, .App {
   right: 0;
 }
 
-.App {
+.App, .ProjectTitle * {
+  font-size: 11px;
+}
+
+.App.live, .App.live .ProjectTitle * {
   font-size: 14px;
 }
 
@@ -28,38 +32,58 @@ html, body, #root, .App {
   font-size: 18px;
 }
 
+
 .contact-ul a svg, .download-header svg {
   font-size: 24px;
   margin-right: 6px;
 }
 
+.contact-ul {
+  line-height: 18px;
+}
+
 /* Grid */
 
 .cv-pdf {
-
   height: 792px;
   width: 612px;
   background-color: white;
   margin: 0 auto;
-  padding: 36px 36px 40px 36px;
-
+  padding: 36px 36px 56px 36px;
 }
 
 .App.live .cv-pdf {
   margin-top: 20px;
+  height: auto;
+  padding-bottom: 0px;
 }
+
+
 
 .grid-template {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 1fr;
-  grid-template-areas: 'contact contact' 'col-one col-two';
+  grid-template-rows: 100px 1fr;
+  /*grid-template-rows: auto auto;*/
+  grid-template-areas: 'contact-lft contact-rt' 'col-one col-two' ;
   grid-gap: 24px;
 }
 
 .contact {
   grid-area: contact;
+}
+
+.contact-lft {
+  grid-area: contact-lft;
+}
+
+.contact-rt {
+  grid-area: contact-rt;
+}
+
+.App.live .contact-lft, .App.live .contact-rt, .App.live .date {
+  font-size: 12px;
 }
 
 .contact span {
@@ -81,19 +105,13 @@ html, body, #root, .App {
   grid-area: col-two;
 }
 
- .cv-pdf:nth-of-type(2) {
-    padding-top: 56px;
-  }
-
- .App.live .cv-pdf:nth-of-type(2) {
-    padding-top: 36px;
-  }
 
 @media screen and (max-width: 612px) {
   .App.live .grid-template {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 'contact' 'col-one' 'col-two';
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 'contact-rt' 'contact-lft'  'col-one' 'col-two';
+    grid-gap: 0;
   }
 
   .App.live .cv-pdf {
@@ -106,9 +124,7 @@ html, body, #root, .App {
     padding-top: 0px;
   }
 
-  .App.live .cv-pdf:nth-of-type(1) {
-    padding-bottom: 0px;
-  }
+
 
   .App.live .live-only-large {
     display: none;
@@ -127,7 +143,11 @@ a {
 }
 
 section {
-  margin-bottom: 36px;
+  margin-bottom: 28px;
+}
+
+.App.live section {
+  margin-bottom: 40px;
 }
 
 ul {
@@ -136,14 +156,20 @@ ul {
 }
 
 .SectionTitle {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 14px;
+  /*text-transform: uppercase;*/
+  /*letter-spacing: 1px;*/
+  /*color: gray;*/
+}
+
+.App.live .SectionTitle:not(.date) {
+  font-size: 18px;
 }
 
 .SectionTitle.date {
-  color: darkgray;
-  display: inline;
+  color: gray;
+   font-size: 10px;
+   margin-bottom: 0;
 }
 
 .SectionText.intro {
@@ -164,9 +190,6 @@ ul {
 
 }
 
-.ProjectTitle * {
-  font-size: 14px;
-}
 
 .App span {
   display: inline-block;

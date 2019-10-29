@@ -25,25 +25,30 @@ function App() {
       {/* -----PAGE ONE----- */}
       <div className="cv-pdf">
         <main className="grid-template">
-          <div className="contact">
-             <Contact contactObj={store.contact} />
-          </div>
-          <div className="col-one">
 
-            <section className="contact">
-              <img src={profileImg} className="inline-circle-img" alt={store.profileImg.alt}/>
-              <SectionText className="intro" text={store.intro} />
-
-              <SectionText text={store.about} />
-            </section>
-
+          <div className="contact-lft">
             <section>
-              <SectionTitle title="Contact"/>
-              <ul className="contact-ul">
-                <li><b>Ali Campbell</b></li>
+              <ul className="contact-ul" style={{marginTop: 0}}>
+                <li><b>Alexandra Campbell</b></li>
                 <li><b>{store.contact.phone}</b></li>
                 <li><b>{store.contact.email.label}</b></li>
-                <li style={{marginTop: 8}}>
+                 <li>
+                  <b>{store.contact.github.preLabel}</b>
+                  {' '}
+                  <a href={store.contact.github.href} aria-label="link to my Github">{store.contact.github.label}</a>
+                </li>
+                <li>
+                  <b>{store.contact.website.preLabel}</b>
+                  {' '}
+                  <a href={store.contact.website.href} aria-label="link to my Github">{store.contact.website.label}</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div className="contact-rt">
+            <section>
+              <ul className="contact-ul" style={{marginTop: 0}}>
+                <li style={{textAlign: 'right'}}>
                   <a href={store.contact.github.href} aria-label="link to my Github">
                     <FontAwesomeIcon icon={faGithubSquare}></FontAwesomeIcon>
                   </a>
@@ -56,16 +61,24 @@ function App() {
                     <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
                   </a>
                   {'  '}
-                  {/*<a href={store.contact.website.href} aria-label="link to my website">
-                    <span>site</span>
-                  </a>*/}
                 </li>
+
               </ul>
             </section>
-
-
           </div>
-          <div className="col-two">
+          <div className="col-one">
+
+
+            <section>
+              {/*<SectionText className="intro" text={store.intro} />
+              <SectionText text={store.about} />*/}
+              <p style={{marginTop: 0, fontStyle: 'italic'}}>
+                {/*<b>{store.intro}</b>*/}
+                {' '}
+                {/*<b>{store.about}</b>*/}
+                {store.about}
+              </p>
+            </section>
 
             <section>
               <SectionTitle title="Dev"/>
@@ -75,6 +88,38 @@ function App() {
             <section>
               <SectionTitle title="UX & UI"/>
               <Skills skills={store.designSkills} />
+            </section>
+            <section>
+              <SectionTitle title="Projects"/>
+              {store.projects.map((project, i) => {
+                return (
+                  <div className="project" key={i}>
+                    <ProjectTitle title={project.title} link={project.link}/>
+                    <SectionText text={project.text}/>
+                    <SectionText text={project.stack} project={project} />
+                  </div>
+                )
+              })}
+              <p><b>You can find more projects on my website at
+                {' '}
+                <a href={store.contact.website.href} target="_blank" rel="noopener noreferrer">{store.contact.website.label}</a>
+              </b></p>
+            </section>
+
+          </div>
+          <div className="col-two">
+
+            <section>
+              <SectionTitle title="Experience"/>
+              {store.experiences.map((exp, i) => {
+                return(
+                  <div className="experience" key={i}>
+                    <SectionTitle className="date" title={exp.date} />
+                    <ProjectTitle title={exp.title} link={exp.insta} role={exp.role}/>
+                    <SectionText text={exp.text} />
+                  </div>
+                )
+              })}
             </section>
 
             <section>
@@ -89,54 +134,11 @@ function App() {
               })}
             </section>
 
+
           </div>
         </main>
       </div>
 
-    {/* -----PAGE TWO----- */}
-      <div className="cv-pdf">
-        <main className="grid-template">
-
-          <div className="contact live-only-large">
-             <Contact contactObj={store.contact} />
-          </div>
-
-          <div className="col-one">
-            <section>
-              <SectionTitle title="Projects"/>
-              {store.projects.map((project, i) => {
-                return (
-                  <div className="project" key={i}>
-                    <ProjectTitle title={project.title} link={project.link}/>
-                    <SectionText text={project.text}/>
-                    <SectionText text={project.stack} project={project} />
-                  </div>
-                )
-              })}
-              <p><b>You can find more projects on my</b>{' '}
-                <a href={store.contact.website.href} target="_blank" rel="noopener noreferrer">website</a>
-              {' '}
-              <b>at {store.contact.website.label}</b></p>
-            </section>
-          </div>
-
-          <div className="col-two">
-            <section>
-              <SectionTitle title="Experience"/>
-              {store.experiences.map((exp, i) => {
-                return(
-                  <div className="experience" key={i}>
-                    <SectionTitle className="date" title={exp.date} />
-                    <ProjectTitle title={exp.title} link={exp.insta} role={exp.role}/>
-                    <SectionText text={exp.text} />
-                  </div>
-                )
-              })}
-            </section>
-          </div>
-
-        </main>
-      </div>
     </div>
   );
 }
