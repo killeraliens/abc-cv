@@ -45,7 +45,7 @@ function App() {
               </ul>
             </section>
           </div>
-          <div className="contact-rt">
+          {/*<div className="contact-rt">
             <section>
               <ul className="contact-ul" style={{marginTop: 0}}>
                 <li style={{textAlign: 'right'}}>
@@ -65,7 +65,7 @@ function App() {
 
               </ul>
             </section>
-          </div>
+          </div>*/}
           <div className="col-one">
 
 
@@ -89,22 +89,19 @@ function App() {
               <SectionTitle title="UX & UI"/>
               <Skills skills={store.designSkills} />
             </section>
-            <section>
-              <SectionTitle title="Projects"/>
-              {store.projects.map((project, i) => {
+
+             <section>
+              <SectionTitle title="Education"/>
+              {store.courses.map((course, i) => {
                 return (
-                  <div className="project" key={i}>
-                    <ProjectTitle title={project.title} link={project.link}/>
-                    <SectionText text={project.text}/>
-                    <SectionText text={project.stack} project={project} />
+                  <div className="course" key={i}>
+                    <SectionTitle  className="date" title={course.date}/>
+                    <ProjectTitle title={course.title} />
                   </div>
                 )
               })}
-              <p><b>You can find more projects on my website at
-                {' '}
-                <a href={store.contact.website.href} target="_blank" rel="noopener noreferrer">{store.contact.website.label}</a>
-              </b></p>
             </section>
+
 
           </div>
           <div className="col-two">
@@ -116,22 +113,31 @@ function App() {
                   <div className="experience" key={i}>
                     <SectionTitle className="date" title={exp.date} />
                     <ProjectTitle title={exp.title} link={exp.insta} role={exp.role}/>
-                    <SectionText text={exp.text} />
+                    <ul className="section-list">
+                      {exp.textBullets.map(bull => <li><span>•</span>{bull}</li>)}
+                    </ul>
                   </div>
                 )
               })}
             </section>
 
             <section>
-              <SectionTitle title="Education"/>
-              {store.courses.map((course, i) => {
+              <SectionTitle title="Projects"/>
+              {store.projects.map((project, i) => {
                 return (
-                  <div className="course" key={i}>
-                    <SectionTitle  className="date" title={course.date}/>
-                    <ProjectTitle title={course.title} />
+                  <div className="project" key={i}>
+                    <ProjectTitle title={project.title} link={project.link}/>
+                    <SectionText text={project.text}/>
+
+
+                    <Skills skills={project.stackSkills} />
                   </div>
                 )
               })}
+              <p><b>You can find more projects on my website at
+                {' '}
+                <a href={store.contact.website.href} target="_blank" rel="noopener noreferrer">{store.contact.website.label}</a>
+              </b></p>
             </section>
 
 
