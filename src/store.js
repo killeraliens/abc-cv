@@ -3,7 +3,7 @@ export default {
   devSkills: [
     'JavaScript', 'React', 'Enzyme', 'jQuery', 'HTML5', 'CSS/Sass',
     'Bootstrap', 'Node.js', 'Ruby on Rails', 'SQL ', 'PostgreSQL',
-    'MVC architecture', 'OOP', 'git', 'GitHub', 'ZEIT Now', 'Heroku'
+    'MVC architecture', 'OOP', 'GitHub git', 'ZEIT now', 'Heroku'
   ],
   designSkills: [
     'CSS Grid & Flexbox', 'responsive design', 'Adobe Creative Suite', 'Webflow', 'Invision', 'Sketch',

@@ -17,7 +17,7 @@ import { faEnvelope, faFileDownload } from '@fortawesome/free-solid-svg-icons'
 function App() {
 
   return (
-    <div className="App">
+    <div className="App live">
       <header className="live-only download-header">
         <a className="live-only" href={cvPdf} rel="noopener noreferrer" target="_blank" download> <FontAwesomeIcon icon={faFileDownload}></FontAwesomeIcon> download my CV</a>
       </header>
@@ -54,6 +54,27 @@ function App() {
                 </ul>
               </section>
             </div>
+            {/*<div className="contact-rt">
+              <section>
+                <ul className="contact-ul" style={{marginTop: 0}}>
+                  <li style={{textAlign: 'right'}}>
+                    <a href={store.contact.github.href} aria-label="link to my Github">
+                      <FontAwesomeIcon icon={faGithubSquare}></FontAwesomeIcon>
+                    </a>
+                    {'  '}
+                    <a href={store.contact.linkedin.href} aria-label="link to my LinkedIn">
+                      <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+                    </a>
+                    {'  '}
+                    <a href={store.contact.email.href} aria-label="link to my Email">
+                      <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+                    </a>
+                    {'  '}
+                  </li>
+
+                </ul>
+              </section>
+            </div>*/}
 
 
 

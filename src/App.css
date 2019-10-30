@@ -16,7 +16,8 @@ html, body, #root, .App {
 }
 
 .App.live, .App.live .ProjectTitle * {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .App .live-only {
@@ -48,6 +49,18 @@ html, body, #root, .App {
   /*display: inline;*/
 }
 
+.App.live .contact-ul, .App.live .date {
+  font-size: 12px;
+
+}
+
+.App.live .contact-ul {
+  line-height: 22px;
+}
+
+
+
+
 /* Grid */
 
 .cv-pdf {
@@ -55,7 +68,7 @@ html, body, #root, .App {
   width: 612px;
   background-color: white;
   margin: 0 auto;
-  padding: 32px 36px 56px 36px;
+  padding: 36px 36px 56px 36px;
 }
 
 .App.live .cv-pdf {
@@ -75,13 +88,14 @@ html, body, #root, .App {
   grid-gap: 24px;
 }
 
-/*.grid-header {
-  grid-area: grid-header;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: 'contact-lft contact-lft contact-rt contact-rt' ;
-}*/
+
+.App.live .grid-template {
+
+  grid-template-rows: 140px 1fr;
+  grid-gap: 28px;
+
+}
+
 
 .contact {
   grid-area: contact;
@@ -99,9 +113,6 @@ html, body, #root, .App {
   grid-area: contact-rt;
 }
 
-.App.live .contact-lft, .App.live .contact-rt, .App.live .date {
-  font-size: 12px;
-}
 
 /*.contact span {
   font-size: 10px;
@@ -115,11 +126,16 @@ html, body, #root, .App {
 .intro-p {
   margin-top: 0;
   font-weight: bold;
-
+  font-style: italic;
+  /*line-height: 16px;*/
   /*font-size: 14px;
   line-height: 18px;
-  font-style: italic;*/
+  */
 }
+
+/*.App.live .intro-p {
+  line-height: 20px;
+}*/
 
 .col-one {
   grid-area: col-one;
@@ -186,6 +202,11 @@ ul.section-list  li {
   padding-left: 16px;
 }
 
+.App.live ul.section-list  li {
+  margin-bottom: 8px;
+  padding-left: 16px;
+}
+
 
 p.project-stack {
   font-weight: bold;
@@ -193,9 +214,6 @@ p.project-stack {
 
 .SectionTitle {
   font-size: 14px;
-  /*text-transform: uppercase;*/
-  /*letter-spacing: 1px;*/
-  /*color: gray;*/
 }
 
 .App.live .SectionTitle:not(.date) {
@@ -216,6 +234,11 @@ p.project-stack {
 div.experience, div.project {
   margin-bottom: 16px;
 }
+
+.App.live div.experience, div.project {
+  margin-bottom: 24px;
+}
+
 
 .role {
   color: gray;
