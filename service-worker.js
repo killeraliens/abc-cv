@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/alexandra-brinn-cv/precache-manifest.1b66f704b2cc6954265d1542f1ecbe7e.js"
+  "/alexandra-brinn-cv/precache-manifest.488a417476222144c75d2268ed367c69.js"
 );
 
 self.addEventListener('message', (event) => {
