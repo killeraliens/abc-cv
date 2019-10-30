@@ -11,7 +11,8 @@ html, body, #root, .App {
 }
 
 .App, .ProjectTitle * {
-  font-size: 11px;
+  font-size: 10px;
+  line-height: 12px;
 }
 
 .App.live, .App.live .ProjectTitle * {
@@ -39,7 +40,12 @@ html, body, #root, .App {
 }
 
 .contact-ul {
+  /*font-size: 8px;*/
   line-height: 18px;
+}
+
+.contact-ul li {
+  /*display: inline;*/
 }
 
 /* Grid */
@@ -63,12 +69,19 @@ html, body, #root, .App {
 .grid-template {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 100px 1fr;
-  /*grid-template-rows: auto auto;*/
-  grid-template-areas: 'contact-lft col-two' 'col-one col-two' ;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 110px 1fr;
+  grid-template-areas: 'contact-lft contact-rt ' 'col-one col-two' ;
   grid-gap: 24px;
 }
+
+/*.grid-header {
+  grid-area: grid-header;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'contact-lft contact-lft contact-rt contact-rt' ;
+}*/
 
 .contact {
   grid-area: contact;
@@ -86,13 +99,22 @@ html, body, #root, .App {
   font-size: 12px;
 }
 
-.contact span {
+/*.contact span {
   font-size: 10px;
   font-weight: bold;
-}
+}*/
 
 .contact > p {
   margin-top: 0;
+}
+
+.intro-p {
+  margin-top: 0;
+  font-weight: bold;
+  font-style: italic;
+  /*font-size: 14px;
+  line-height: 18px;
+  font-style: italic;*/
 }
 
 .col-one {
@@ -156,7 +178,8 @@ ul {
 }
 
 ul.section-list  li {
-  /*margin-bottom: 4px;*/
+  margin-bottom: 4px;
+  padding-left: 16px;
 }
 
 
@@ -190,6 +213,9 @@ div.experience, div.project {
   margin-bottom: 16px;
 }
 
+.role {
+  color: gray;
+}
 
 .inline-circle-img {
   width: 100px;
@@ -204,7 +230,7 @@ div.experience, div.project {
 }
 
 
-.App span {
+.App span:not(.role) {
   display: inline-block;
   margin-right: 8px;
 }

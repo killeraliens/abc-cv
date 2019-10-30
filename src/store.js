@@ -20,9 +20,9 @@ export default {
     phone:  "1+ (602) 625-2503",
     location: "Phoenix, Arizona",
     email: {preLabel: "email", href: 'mailto:AlexandraBrinnCampbell@gmail.com', label: 'AlexandraBrinnCampbell@gmail.com', targetBlank: false},
-    github: {preLabel: "GitHub user", href: 'https://github.com/killeraliens', label: 'killeraliens'},
-    linkedin: {preLabel: "LinkedIn", href:'https://linkedin.com/in/alexandra-brinn-campbell', label: 'linkedin.com/in/alexandra-brinn-campbell', targetBlank: true} ,
-    website: {preLabel: 'website', href: 'https://killeraliens.github.io/alexandra-brinn/', label:'killeraliens.github.io/alexandra-brinn', targetBlank: true}
+    github: {preLabel: "GitHub", href: 'https://github.com/killeraliens', label: 'killeraliens'},
+    linkedin: {preLabel: "LinkedIn", href:'https://linkedin.com/in/alexandra-brinn-campbell', label: '/alexandra-brinn-campbell', targetBlank: true} ,
+    website: {preLabel: 'www', href: 'https://killeraliens.github.io/alexandra-brinn/', label:'killeraliens.github.io/alexandra-brinn', targetBlank: true}
   },
   projects: [
     {
@@ -77,14 +77,24 @@ export default {
         'Managed various projects from start to completion by coordinating amongst stakeholders including clients, designers, and fabrication departments.',
         'Contributed to spatial design, client communications, and marketing content, as well as executed and presented technical drafting, construction & installation plan documents. '
       ],
+      textBullets2: [
+        'Managed projects through complete lifecycle.',
+        'Coordinated with clients, designers, fabrication departments, and other stakeholders.',
+        'Supported spatial design, client communications, and marketing content.',
+        'Executed and presented technical drafting, construction, and installation plan documents.'
+      ],
       insta: {href: 'https://www.instagram.com/burgeongroup/', label: 'instagram @BurgeonGroup'}
     },
     {
       date: '2012 - 2015',
       title: 'Demi Coffee',
-      role: 'Owner Operations',
+      role: 'Owner',
       text: 'Developed and operated a small food & beverage concept with a partner. Great experience in customer service, creative offerings, fun with branding. Best cold brew.',
       textBullets: [
+        'Provided exceptional  customer service and niche experience with creative food & beverage offerings in Phoenix AZ.',
+        'Known in the community for our unique space, amazing cold brew, and attention to quality.'
+      ],
+       textBullets2: [
         'Provided exceptional  customer service and niche experience with creative food & beverage offerings in Phoenix AZ.',
         'Known in the community for our unique space, amazing cold brew, and attention to quality.'
       ],
