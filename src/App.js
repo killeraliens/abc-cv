@@ -85,8 +85,6 @@ function App() {
                   <div className="project" key={i}>
                     <ProjectTitle title={project.title} link={project.link}/>
                     <SectionText text={project.text}/>
-
-
                     <Skills skills={project.stackSkills} />
                   </div>
                 )
@@ -110,7 +108,7 @@ function App() {
                     <SectionTitle className="date" title={exp.date} />
                     <ProjectTitle title={exp.title} link={exp.insta} role={exp.role}/>
                     <ul className="section-list">
-                      {exp.textBullets.map(bull => <React.Fragment><span style={{float: 'left'}}>•</span><li>{bull}</li></React.Fragment>)}
+                      {exp.textBullets2.map(bull => <React.Fragment><span style={{float: 'left'}}>•</span><li>{bull}</li></React.Fragment>)}
                     </ul>
                   </div>
                 )
