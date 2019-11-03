@@ -28,7 +28,9 @@ function App() {
 
             <div className="contact-lft">
               <section>
-                <ul className="contact-ul" style={{marginTop: 0}}>
+              {/*<h1 style={{marginTop: 0}}>Alexandra Campbell</h1>*/}
+
+             <ul className="contact-ul" style={{marginTop: 0}}>
                   <li><b>Alexandra Campbell</b></li>
                   <li><b>{store.contact.phone}</b></li>
                   <li>
@@ -36,6 +38,36 @@ function App() {
                     {' '}
                     <a href={store.contact.email.href} aria-label="link to email" >{store.contact.email.label}</a>
                   </li>
+
+                </ul>
+              </section>
+            </div>
+            <div className="contact-rt">
+              <section>
+                {/*<ul className="contact-ul" style={{marginTop: 0}}>
+                  <li style={{textAlign: 'right'}}>
+                    <a href={store.contact.github.href} aria-label="link to my Github">
+                      <FontAwesomeIcon icon={faGithubSquare}></FontAwesomeIcon>
+                    </a>
+                    {'  '}
+                    <a href={store.contact.linkedin.href} aria-label="link to my LinkedIn">
+                      <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+                    </a>
+                    {'  '}
+                    <a href={store.contact.email.href} aria-label="link to my Email">
+                      <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+                    </a>
+                    {'  '}
+                  </li>
+
+                </ul>*/}
+                 <ul className="contact-ul" style={{marginTop: 0}}>
+                  {/*<li><b>{store.contact.phone}</b></li>
+                  <li>
+                    <b>{store.contact.email.preLabel}</b>
+                    {' '}
+                    <a href={store.contact.email.href} aria-label="link to email" >{store.contact.email.label}</a>
+                  </li>*/}
                   <li>
                     <b>{store.contact.github.preLabel}</b>
                     {' '}
@@ -52,29 +84,9 @@ function App() {
                     <a href={store.contact.website.href} aria-label="link to my Website" target="_blank">{store.contact.website.label}</a>
                   </li>
                 </ul>
+
               </section>
             </div>
-            {/*<div className="contact-rt">
-              <section>
-                <ul className="contact-ul" style={{marginTop: 0}}>
-                  <li style={{textAlign: 'right'}}>
-                    <a href={store.contact.github.href} aria-label="link to my Github">
-                      <FontAwesomeIcon icon={faGithubSquare}></FontAwesomeIcon>
-                    </a>
-                    {'  '}
-                    <a href={store.contact.linkedin.href} aria-label="link to my LinkedIn">
-                      <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
-                    </a>
-                    {'  '}
-                    <a href={store.contact.email.href} aria-label="link to my Email">
-                      <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
-                    </a>
-                    {'  '}
-                  </li>
-
-                </ul>
-              </section>
-            </div>*/}
 
 
 

@@ -74,7 +74,7 @@ export default {
       role: 'Design Project Manager',
       text: 'Burgeon group is a niche design & build firm with a stellar international reputation for the concept, design, and fabrication of children’s experience in the public library space. My role as design project manager included coordination between  client , design, and fabrication departments.  I worked closely with the CEO/lead designer contributing to client communications, design, and marketing, as well as executed the technical drafting, construction & installation plan documents for our inhouse fabrication teams.',
       textBullets2: [
-        'Managed projects through complete lifecycle by coordinating amongst stakeholders including clients, designers, and fabrication departments.',
+        'Managed projects through complete lifecycle by coordinating with stakeholders, including clients, designers, and fabrication departments.',
         'Supported spatial design, client communications and presentations, marketing content, and file management.',
         'Executed and presented technical drafting, construction & installation plan documents on a weekly basis.'
       ],
