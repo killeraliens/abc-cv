@@ -11,11 +11,13 @@ html, body, #root, .App {
 }
 
 .App, .ProjectTitle * {
-  font-size: 11px;
+  font-size: 10px;
+  line-height: 12px;
 }
 
 .App.live, .App.live .ProjectTitle * {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .App .live-only {
@@ -39,8 +41,25 @@ html, body, #root, .App {
 }
 
 .contact-ul {
-  line-height: 18px;
+  /*font-size: 8px;*/
+  line-height: 16px;
 }
+
+.contact-ul li {
+  /*display: inline;*/
+}
+
+.App.live .contact-ul, .App.live .date {
+  font-size: 12px;
+
+}
+
+.App.live .contact-ul {
+  line-height: 22px;
+}
+
+
+
 
 /* Grid */
 
@@ -65,10 +84,18 @@ html, body, #root, .App {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 1fr;
-  /*grid-template-rows: auto auto;*/
-  grid-template-areas: 'contact-lft contact-rt' 'col-one col-two' ;
+  grid-template-areas: 'contact-lft contact-rt ' 'col-one col-two' ;
   grid-gap: 24px;
 }
+
+
+.App.live .grid-template {
+
+  grid-template-rows: 140px 1fr;
+  grid-gap: 28px;
+
+}
+
 
 .contact {
   grid-area: contact;
@@ -78,22 +105,37 @@ html, body, #root, .App {
   grid-area: contact-lft;
 }
 
+.contact-lft a {
+  /*color: #00B3FF;*/
+}
+
 .contact-rt {
   grid-area: contact-rt;
 }
 
-.App.live .contact-lft, .App.live .contact-rt, .App.live .date {
-  font-size: 12px;
-}
 
-.contact span {
+/*.contact span {
   font-size: 10px;
   font-weight: bold;
-}
+}*/
 
 .contact > p {
   margin-top: 0;
 }
+
+.intro-p {
+  margin-top: 0;
+  font-weight: bold;
+  font-style: italic;
+  /*line-height: 16px;*/
+  /*font-size: 14px;
+  line-height: 18px;
+  */
+}
+
+/*.App.live .intro-p {
+  line-height: 20px;
+}*/
 
 .col-one {
   grid-area: col-one;
@@ -155,11 +197,23 @@ ul {
   padding-left: 0;
 }
 
+ul.section-list  li {
+  margin-bottom: 4px;
+  padding-left: 16px;
+}
+
+.App.live ul.section-list  li {
+  margin-bottom: 8px;
+  padding-left: 16px;
+}
+
+
+p.project-stack {
+  font-weight: bold;
+}
+
 .SectionTitle {
   font-size: 14px;
-  /*text-transform: uppercase;*/
-  /*letter-spacing: 1px;*/
-  /*color: gray;*/
 }
 
 .App.live .SectionTitle:not(.date) {
@@ -177,6 +231,18 @@ ul {
   margin-top: 0;
 }
 
+div.experience, div.project {
+  margin-bottom: 16px;
+}
+
+.App.live div.experience, div.project {
+  margin-bottom: 24px;
+}
+
+
+.role {
+  color: gray;
+}
 
 .inline-circle-img {
   width: 100px;
@@ -191,7 +257,7 @@ ul {
 }
 
 
-.App span {
+.App span:not(.role) {
   display: inline-block;
   margin-right: 8px;
 }
