@@ -28,26 +28,44 @@ html, body, #root, .App {
   display: block;
 }
 
-.download-header {
+.download-nav {
   text-align: center;
   margin: 24px;
   font-size: 18px;
 }
 
 
-.contact-ul a svg, .download-header svg {
+.IconNav svg, .download-nav svg {
   font-size: 24px;
-  margin-right: 6px;
+  margin-right: 8px;
 }
 
 .contact-ul {
-  /*font-size: 8px;*/
   line-height: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.contact-ul li {
-  /*display: inline;*/
+
+.IconNav .contact-ul li {
+   display: inline-block;
 }
+
+.IconNav {
+  width: 100%;
+  text-align: center;
+}
+
+.App.live .footer {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.IconNav svg {
+   margin-right: 0;
+   padding: 8px;
+}
+
 
 .App.live .contact-ul, .App.live .date {
   font-size: 12px;
@@ -74,7 +92,8 @@ html, body, #root, .App {
 .App.live .cv-pdf {
   margin-top: 20px;
   height: auto;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
+  position: relative;
 }
 
 
@@ -84,40 +103,25 @@ html, body, #root, .App {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 1fr;
-  grid-template-areas: 'contact-lft contact-rt ' 'col-one col-two' ;
+  grid-template-areas: 'contact-lft contact-rt' 'col-one col-two' ;
   grid-gap: 24px;
 }
 
 
 .App.live .grid-template {
-
   grid-template-rows: 140px 1fr;
   grid-gap: 28px;
-
 }
 
-
-.contact {
-  grid-area: contact;
-}
 
 .contact-lft {
   grid-area: contact-lft;
-}
-
-.contact-lft a {
-  /*color: #00B3FF;*/
 }
 
 .contact-rt {
   grid-area: contact-rt;
 }
 
-
-/*.contact span {
-  font-size: 10px;
-  font-weight: bold;
-}*/
 
 .contact > p {
   margin-top: 0;
@@ -127,15 +131,7 @@ html, body, #root, .App {
   margin-top: 0;
   font-weight: bold;
   font-style: italic;
-  /*line-height: 16px;*/
-  /*font-size: 14px;
-  line-height: 18px;
-  */
 }
-
-/*.App.live .intro-p {
-  line-height: 20px;
-}*/
 
 .col-one {
   grid-area: col-one;
@@ -151,8 +147,8 @@ html, body, #root, .App {
 @media screen and (max-width: 612px) {
   .App.live .grid-template {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: 'contact-rt' 'contact-lft'  'col-one' 'col-two';
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'contact-lft' 'contact-rt' 'col-one' 'col-two';
     grid-gap: 0;
   }
 
@@ -165,7 +161,6 @@ html, body, #root, .App {
   .App.live .cv-pdf:nth-of-type(2) {
     padding-top: 0px;
   }
-
 
 
   .App.live .live-only-large {
@@ -226,10 +221,6 @@ p.project-stack {
    margin-bottom: 0;
 }
 
-.SectionText.intro {
-  font-weight: bold;
-  margin-top: 0;
-}
 
 div.experience, div.project {
   margin-bottom: 16px;

@@ -20,7 +20,7 @@ export default {
     phone:  "1+ (602) 625-2503",
     location: "Phoenix, Arizona",
     email: {preLabel: "email", href: 'mailto:AlexandraBrinnCampbell@gmail.com', label: 'AlexandraBrinnCampbell@gmail.com', targetBlank: false},
-    github: {preLabel: "GitHub", href: 'https://github.com/killeraliens', label: 'killeraliens'},
+    github: {preLabel: "GitHub", href: 'https://github.com/killeraliens', label: 'killeraliens',  targetBlank: true},
     linkedin: {preLabel: "LinkedIn", href:'https://linkedin.com/in/alexandra-brinn-campbell', label: '/alexandra-brinn-campbell', targetBlank: true} ,
     website: {preLabel: 'www', href: 'https://killeraliens.github.io/alexandra-brinn/', label:'killeraliens.github.io/alexandra-brinn', targetBlank: true}
   },
