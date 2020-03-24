@@ -9,12 +9,12 @@ Created with React and Pupeteer.
 
 ### Live Version
 View my CV. Download it! Formatted for mobile viewing too.
-
-![My live resume desktop format screenshot](/src/assets/cv-desktop.png)
+[https://killeraliens.github.io/alexandra-brinn-cv](https://killeraliens.github.io/alexandra-brinn-cv/)
+<!-- ![My live resume desktop format screenshot](/src/assets/cv-desktop.png)
 
 ![My live resume mobile format screenshot](/src/assets/cv-mobile.png)
 
-![My live resume pdf format screenshot](/src/assets/cv-pdf.png)
+![My live resume pdf format screenshot](/src/assets/cv-pdf.png) -->
 
 
 ### For Developers
