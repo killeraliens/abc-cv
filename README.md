@@ -17,8 +17,14 @@ View my CV. Download it! Formatted for mobile viewing too.
 ![My live resume pdf format screenshot](/src/assets/cv-pdf.png)
 
 
-### Dev Mode
-Easy to update resume. Make style or content changes, update the downloadable PDF with `npm run generate`. The new PDF format will be based on the sites' current HTML & CSS file state. Add class `live` back to `App` for production mode formatting and deploy.
+### For Developers
+Use as a template for your own print or web CV.
+
+1. To copy my template clone this repo with `git clone git@github.com:killeraliens/alexandra-brinn-cv.git`.
+2. Install dependencies with `npm install`.
+3. Make content changes to the components inside the `src` folder.
+4. Update the downloadable PDF version with `npm run generate`. The new PDF format will be based on the sites' current HTML & CSS file state.
+5. Add class `live` back to `App` for production mode formatting and deploy.
 
 ![How to update the PDF dev mode, animated gif](/src/assets/cv-pdf-generate.gif)
 
