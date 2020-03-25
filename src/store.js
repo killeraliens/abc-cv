@@ -44,13 +44,13 @@ export default {
     {
       title: "Goat's Guide (V2)",
       text: `If you know about an upcoming concert, fest, or tour, share the flier on Goat's Guide - a DIY bulletin board for poster artwork and event information. \n` +
-        `This is a new strategy on a passion project utilizing the PERN stack along with TDD and CI techniques. Custom authorizaton and protected endpoints make both the frontend and API private to the community. \n` +
+        `This is a new strategy on a passion project utilizing the PERN stack along with TDD and CI techniques. Custom authorizaton and protected endpoints make both the frontend and REST API private to the community. \n` +
         `Read more about the project and get demo account access`, //inlineLink here
       stack: "The UI is built with React, and utilizes functional components (hooks!) and React's context API to manage state." +
         "I used Express and Node.js to build the service layer, which allowed more customization in the request/response cycles.\n" +
         "PostgreSQL database. Deployed with Heroku (server) and Zeit (client).",
       stackSkills: [
-        "PostgreSQL", "Express", "React", "Node.js", "CSS",
+        "PostgreSQL", "Express", "React", "Node.js", "CSS", "REST API", "SQL",
         "Zeit/Now", "Heroku", "TDD server-side", "Mocha, Chai, and Supertest"
       ],
       inlineLink: { href:"https://github.com/killeraliens/goats-client", label: "here." }, //<a href='https://github.com/killeraliens/goats-client'>here</a>
@@ -60,8 +60,8 @@ export default {
     {
       title: "Goat's Guide (V1)",
       text: "Goat’s Guide is a heavy metal event & venue database concept as well as an ongoing study in UX design. \
-        I am currently reworking this project using React, Express/Node to reduce app loading time, \
-        and improve user experience, and encourage more complete and user-sourced event data.",
+        I am currently reworking this project using React, Express, and Node.js to reduce app loading time, \
+        and improve user experience while encouraging more complete and user-sourced event data.",
       stack: "This version is built with Ruby on Rails, and utilizes HTML-scraping gems such as Watir and Nokogiri, \
         along with custom background tasks/Sidekiq to collect event data. Uses Devise gem for authentication. \
         PostgreSQL database. Deployed with Heroku.",
@@ -81,7 +81,7 @@ export default {
     // },
   ],
   courses: [
-    {title: "Thinkful. JavaScript, Node Fullstack Engineering Program", date: "May 2019 - Curr"},
+    {title: "Thinkful. JavaScript, Node Fullstack Engineering Program", date: "May 2019 - Feb 2020"},
     {title: "Le Wagon, London. Ruby on Rails Coding Bootcamp", date: "Jan - Mar 2019"},
     {title: "General Assembly 8 week course in UX design", date: "Feb - Mar 2018"},
     {title: "Emily Carr University, Vancouver BC", date: "BDES Industrial Design, 2007"},
@@ -109,7 +109,7 @@ export default {
     {
       date: '2012 - 2015',
       title: 'Demi Coffee, Phoenix AZ',
-      role: 'Owner',
+      role: 'Owner/Operations',
       text: 'Developed and operated a small food & beverage concept with a partner. Great experience in customer service, creative offerings, fun with branding. Best cold brew.',
       // textBullets: [
       //   'Provided exceptional customer service and a niche experience with creative food, beverages, and atmosphere.',
