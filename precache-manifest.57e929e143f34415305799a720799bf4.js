@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "36b01753d0d6202de8230c5a1ef2da0c",
+    "revision": "69d12b4823fc7bf9f8bf69567f3ab1d4",
     "url": "/alexandra-brinn-cv/index.html"
   },
   {
-    "revision": "849d368d356bf10b97ef",
+    "revision": "08589b23e8b2246bcb32",
     "url": "/alexandra-brinn-cv/static/css/main.5704321e.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/alexandra-brinn-cv/static/js/2.f9446751.chunk.js"
   },
   {
-    "revision": "849d368d356bf10b97ef",
-    "url": "/alexandra-brinn-cv/static/js/main.0dedb77d.chunk.js"
+    "revision": "08589b23e8b2246bcb32",
+    "url": "/alexandra-brinn-cv/static/js/main.c4e0ce08.chunk.js"
   },
   {
     "revision": "7e45257a865d9b23db71",
