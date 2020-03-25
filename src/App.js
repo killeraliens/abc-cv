@@ -81,7 +81,11 @@ function App() {
                 return (
                   <div className="project" key={i}>
                     <ProjectTitle title={project.title} link={project.link}/>
-                    <p>{project.text}</p>
+                    <p>
+                {project.text}{' '}{project.inlineLink && !!project.inlineLink.href
+                      ? <a href={project.inlineLink.href} target="_blank">{project.inlineLink.label}</a>
+                      : null}
+                    </p>
                     <Skills skills={project.stackSkills} />
                   </div>
                 )
@@ -105,7 +109,7 @@ function App() {
                     <SectionTitle className="date" title={exp.date} />
                     <ProjectTitle title={exp.title} link={exp.insta} role={exp.role}/>
                     <ul className="section-list">
-                      {exp.textBullets2.map((bull, i) => <React.Fragment key={i}><span style={{float: 'left'}}>•</span><li>{bull}</li></React.Fragment>)}
+                      {exp.textBullets.map((bull, i) => <React.Fragment key={i}><span style={{float: 'left'}}>•</span><li>{bull}</li></React.Fragment>)}
                     </ul>
                   </div>
                 )
