@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "69d12b4823fc7bf9f8bf69567f3ab1d4",
+    "revision": "64c2368f5d4b480b17444a6588c73d34",
     "url": "/alexandra-brinn-cv/index.html"
   },
   {
