@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/alexandra-brinn-cv/static/css/main.5704321e.chunk.css",
-    "main.js": "/alexandra-brinn-cv/static/js/main.c4e0ce08.chunk.js",
-    "main.js.map": "/alexandra-brinn-cv/static/js/main.c4e0ce08.chunk.js.map",
-    "runtime-main.js": "/alexandra-brinn-cv/static/js/runtime-main.cb85bc1a.js",
-    "runtime-main.js.map": "/alexandra-brinn-cv/static/js/runtime-main.cb85bc1a.js.map",
-    "static/js/2.f9446751.chunk.js": "/alexandra-brinn-cv/static/js/2.f9446751.chunk.js",
-    "static/js/2.f9446751.chunk.js.map": "/alexandra-brinn-cv/static/js/2.f9446751.chunk.js.map",
-    "index.html": "/alexandra-brinn-cv/index.html",
-    "precache-manifest.a8429cdb861ac5a9c29a5d5603125dee.js": "/alexandra-brinn-cv/precache-manifest.a8429cdb861ac5a9c29a5d5603125dee.js",
-    "service-worker.js": "/alexandra-brinn-cv/service-worker.js",
-    "static/css/main.5704321e.chunk.css.map": "/alexandra-brinn-cv/static/css/main.5704321e.chunk.css.map",
-    "static/media/alexandra-brinn-campbell-cv.pdf": "/alexandra-brinn-cv/static/media/alexandra-brinn-campbell-cv.5c0587a2.pdf"
+    "main.css": "/abc-cv/static/css/main.5704321e.chunk.css",
+    "main.js": "/abc-cv/static/js/main.83630456.chunk.js",
+    "main.js.map": "/abc-cv/static/js/main.83630456.chunk.js.map",
+    "runtime-main.js": "/abc-cv/static/js/runtime-main.a57e010e.js",
+    "runtime-main.js.map": "/abc-cv/static/js/runtime-main.a57e010e.js.map",
+    "static/js/2.2431f6e5.chunk.js": "/abc-cv/static/js/2.2431f6e5.chunk.js",
+    "static/js/2.2431f6e5.chunk.js.map": "/abc-cv/static/js/2.2431f6e5.chunk.js.map",
+    "index.html": "/abc-cv/index.html",
+    "precache-manifest.dbdd382b9f9ed5dc0b3149b8178d1b9f.js": "/abc-cv/precache-manifest.dbdd382b9f9ed5dc0b3149b8178d1b9f.js",
+    "service-worker.js": "/abc-cv/service-worker.js",
+    "static/css/main.5704321e.chunk.css.map": "/abc-cv/static/css/main.5704321e.chunk.css.map",
+    "static/media/alexandra-brinn-campbell-cv.pdf": "/abc-cv/static/media/alexandra-brinn-campbell-cv.94596fa5.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.cb85bc1a.js",
-    "static/js/2.f9446751.chunk.js",
+    "static/js/runtime-main.a57e010e.js",
+    "static/js/2.2431f6e5.chunk.js",
     "static/css/main.5704321e.chunk.css",
-    "static/js/main.c4e0ce08.chunk.js"
+    "static/js/main.83630456.chunk.js"
   ]
 }
