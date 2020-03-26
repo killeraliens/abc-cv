@@ -7,6 +7,7 @@ const puppeteer = require('puppeteer');
   await page.goto('http://localhost:3000/');
   await page.emulateMedia('screen');
   await page.pdf({
+    // replace this path with the name of your cloned project path and preferred pdf name
     path: '/Users/user/code/killeraliens/alexandra-brinn-cv/src/assets/alexandra-brinn-campbell-cv.pdf',
     printBackground: true,
     width: '612px',

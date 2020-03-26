@@ -3,8 +3,8 @@ import SectionTitle from './SectionTitle';
 import Skills from './Skills';
 import ProjectTitle from './ProjectTitle';
 import IconNav from './IconNav';
-import cvPdf from './assets/alexandra-brinn-campbell-cv.pdf';
-import store from './store.js';
+import cvPdf from '../assets/alexandra-brinn-campbell-cv.pdf';
+import store from '../store.js';
 import './App.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,7 +14,7 @@ import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
 function App() {
 
   return (
-    <div className="App live">
+    <div className="App">
       <nav className="live-only download-nav">
         <a className="live-only" href={cvPdf} rel="noopener noreferrer" target="_blank" download> <FontAwesomeIcon icon={faFileDownload}></FontAwesomeIcon> download my CV</a>
       </nav>
@@ -83,7 +83,7 @@ function App() {
                     <ProjectTitle title={project.title} link={project.link}/>
                     <p>
                 {project.text}{' '}{project.inlineLink && !!project.inlineLink.href
-                      ? <a href={project.inlineLink.href} target="_blank">{project.inlineLink.label}</a>
+                        ? <a href={project.inlineLink.href} target="_blank" rel="noopener noreferrer">{project.inlineLink.label}</a>
                       : null}
                     </p>
                     <Skills skills={project.stackSkills} />

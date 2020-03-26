@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default {
   devSkills: [
     `Postgres`, `Express`, `React`, `Node.js`, `Ruby on Rails`,
