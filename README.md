@@ -10,11 +10,22 @@ Created with React and Pupeteer.
 ### Live Version
 View my CV. Download it! Formatted for mobile viewing too.
 [Alexandra Brinn Campbell's CV](https://killeraliens.github.io/abc-cv/)
-<!-- ![My live resume desktop format screenshot](/src/assets/cv-desktop.png)
 
-![My live resume mobile format screenshot](/src/assets/cv-mobile.png)
+Deployed resume in desktop format.
+<kbd>
+  <img src="./src/assets/cv-desktop.png" alt="'live' deployed resume desktop format screenshot">
+</kbd>
 
-![My live resume pdf format screenshot](/src/assets/cv-pdf.png) -->
+
+Deployed resume in mobile format.
+<kbd>
+  <img src="./src/assets/cv-mobile.png" alt="'live' resume mobile format screenshot">
+</kbd>
+
+Downloadable PDF format created.
+<kbd>
+  <img src="./src/assets/cv-pdf.png" alt="'resume pdf format screenshot">
+</kbd>
 
 
 ### For Developers
@@ -31,8 +42,8 @@ Use as a template for your own print or web CV.
 7. Add class `live` back to `/components/App.js` for production mode formatting and commit your changes to your github repo before deployment.
 8. Deploy with `npm run deploy`.
 
-![How to update the PDF dev mode, animated gif](/src/assets/cv-pdf-generate.gif)
-
+<!-- ![How to update the PDF dev mode, animated gif](/src/assets/cv-pdf-generate.gif)
+ -->
 
 ## Built With
 
