@@ -14,7 +14,7 @@ import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
 function App() {
 
   return (
-    <div className="App">
+    <div className="App live">
       <nav className="live-only download-nav">
         <a className="live-only" href={cvPdf} rel="noopener noreferrer" target="_blank" download> <FontAwesomeIcon icon={faFileDownload}></FontAwesomeIcon> download my CV</a>
       </nav>
@@ -52,9 +52,7 @@ function App() {
               </ul>
             </section>
           </div>
-         {/* <div className="contact-rt">
-            <IconNav contact={store.contact}/>
-          </div>*/}
+
 
 
           <div className="col-one">
