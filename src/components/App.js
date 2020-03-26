@@ -6,9 +6,7 @@ import IconNav from './IconNav';
 import cvPdf from '../assets/alexandra-brinn-campbell-cv.pdf';
 import store from '../store.js';
 import './App.css';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
+import PdfDownload from './PdfDownload';
 
 
 function App() {
@@ -16,7 +14,7 @@ function App() {
   return (
     <div className="App live">
       <nav className="live-only download-nav">
-        <a className="live-only" href={cvPdf} rel="noopener noreferrer" target="_blank" download> <FontAwesomeIcon icon={faFileDownload}></FontAwesomeIcon> download my CV</a>
+        <PdfDownload path={cvPdf}/>
       </nav>
 
       {/* -----PAGE ONE----- */}
