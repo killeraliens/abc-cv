@@ -96,12 +96,6 @@ export default {
         'Supported spatial design, client communications and presentations, marketing content, and file management.',
         'Executed and presented technical drafting, construction & installation plan documents weekly.'
       ],
-      // textBullets: [
-      //   'Managed projects through complete lifecycle.',
-      //   'Coordinated with clients, designers, fabrication departments, and other stakeholders.',
-      //   'Supported spatial design, client communications, and marketing content.',
-      //   'Executed and presented technical drafting, construction, and installation plan documents.'
-      // ],
       insta: {href: 'https://www.instagram.com/burgeongroup/', label: 'instagram @BurgeonGroup'}
     },
     {
@@ -109,10 +103,6 @@ export default {
       title: 'Demi Coffee, Phoenix AZ',
       role: 'Owner/Operations',
       text: 'Developed and operated a small food & beverage concept with a partner. Great experience in customer service, creative offerings, fun with branding. Best cold brew.',
-      // textBullets: [
-      //   'Provided exceptional customer service and a niche experience with creative food, beverages, and atmosphere.',
-      //   'Known in the community for a unique (tiny!) space, fantastic cold brew, and attention to quality.'
-      // ],
       textBullets: [
         'Known in the community for a unique (tiny!) space, fantastic cold brew, and attention to quality.',
         'Provided exceptional customer service and a niche experience with creative food, beverages, and atmosphere.'
@@ -129,11 +119,6 @@ export default {
         'Iterative "flatpack" designs in stainless and powder coat steel, custom displays & storage solutions.',
         'Images & descriptions available on request.'
       ],
-      // textBullets: [
-      //   'A project which showcases knowledge of process, materials, and design using Iterative ‘flatpack’ laser-cut designs in stainless and powdercoat steel.',
-      //   'Created custom displays and storage solutions. ',
-      //   'Images and descriptions available on request.'
-      // ],
     },
     {
       date: '2009 - 2013',
@@ -141,10 +126,6 @@ export default {
       role: ' Freelance Graphics & Branding',
       text: 'Collaborating with three others in web, film, and UX backgrounds. \
         Brand development and various projects in graphic, signage, web, and packaging for Visual+Intent, Cartel Coffee Lab, Request Manufacturing, Sooh Media +',
-      // textBullets: [
-      //   'Collaborating with three others in web, film, and UX backgrounds. ',
-      //   'Brand development and various projects in graphic, signage, web, and packaging for Visual+Intent, Cartel Coffee Lab, Request Manufacturing, Sooh Media + . '
-      // ],
       textBullets: [
         'Collaborated with a small team in the areas of web, film, branding, and UX design.',
         'Supported brand development through signage, web, and packaging graphics for Visual+Intent, Cartel Coffee Lab, Request Manufacturing, and Sooh Media.'
