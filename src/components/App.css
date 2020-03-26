@@ -43,11 +43,11 @@ html, body, #root, .App {
   .download-nav {
     text-align: center;
     margin: 24px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .IconNav svg, .download-nav svg {
-    font-size: 24px;
+    font-size: 16px;
     margin-right: 8px;
   }
 }
