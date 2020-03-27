@@ -78,7 +78,7 @@ function App() {
                   <div className="project" key={i}>
                     <ProjectTitle title={project.title} link={project.link}/>
                     <p>
-                {project.text}{' '}{project.inlineLink && !!project.inlineLink.href
+                        {project.text}{' '}{project.inlineLink && !!project.inlineLink.href
                         ? <a href={project.inlineLink.href} target="_blank" rel="noopener noreferrer">{project.inlineLink.label}</a>
                       : null}
                     </p>
