@@ -12,22 +12,26 @@ View my CV. Download it! Formatted for mobile viewing too.
 [Alexandra Brinn Campbell's CV](https://killeraliens.github.io/abc-cv/)
 
 Deployed resume in desktop format.
-<kbd>
-  <img src="./src/assets/cv-desktop.png" alt="'live' deployed resume desktop format screenshot">
-</kbd>
-
-
+<div>
+  <kbd>
+    <img src="./src/assets/cv-desktop.png" alt="'live' deployed resume desktop format screenshot">
+  </kbd>
+</div>
+<br/>
 Deployed resume in mobile format.
 <div>
   <kbd>
     <img src="./src/assets/cv-mobile.png" alt="'live' resume mobile format screenshot">
   </kbd>
 </div>
-
+<br/>
 Downloadable PDF format created.
-<kbd>
-  <img src="./src/assets/cv-pdf.png" alt="'resume pdf format screenshot">
-</kbd>
+<div>
+  <kbd>
+    <img src="./src/assets/cv-pdf.png" alt="'resume pdf format screenshot">
+  </kbd>
+</div>
+<br/>
 
 
 ### For Developers
