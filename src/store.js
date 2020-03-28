@@ -40,7 +40,7 @@ export default {
     //   github: {href: "https://github.com/killeraliens/doctors-near-me", label: "github.com/killeraliens/doctors-near-me"}
     // },
     {
-      title: "Goat's Guide (V2)",
+      title: "Goat's Guide (pivot design)",
       text: `If you know about an upcoming concert, fest, or tour, share the flier on Goat's Guide - a DIY bulletin board for poster artwork and event information. \n` +
         `This is a new strategy on a passion project utilizing the PERN stack along with TDD and CI techniques. Custom authorizaton and protected endpoints make both the frontend and REST API private to the community. \n` +
         `Read more about the project and get demo account access`, //inlineLink here
@@ -56,7 +56,7 @@ export default {
       github: { href: "https://github.com/killeraliens/goats-api", label: "github.com/killeraliens/goats-api" }
     },
     {
-      title: "Goat's Guide (V1)",
+      title: "Goat's Guide MVP",
       text: "Goat’s Guide is a heavy metal event & venue database concept as well as an ongoing study in UX design. \
         I am currently reworking this project using React, Express, and Node.js to reduce app loading time, \
         and improve user experience while encouraging more complete and user-sourced event data.",
