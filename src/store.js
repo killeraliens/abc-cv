@@ -59,15 +59,17 @@ export default {
       title: "Goat's Guide MVP",
       text: "Goat’s Guide is a heavy metal event & venue database concept as well as an ongoing study in UX design. \
         I am currently reworking this project using React, Express, and Node.js to reduce app loading time, \
-        and improve user experience while encouraging more complete and user-sourced event data.",
+        and improve user experience while encouraging more complete and user-sourced event data. \
+        Check out the early Invision prototype ",
       stack: "This version is built with Ruby on Rails, and utilizes HTML-scraping gems such as Watir and Nokogiri, \
         along with custom background tasks/Sidekiq to collect event data. Uses Devise gem for authentication. \
         PostgreSQL database. Deployed with Heroku.",
       stackSkills: [
-        "Ruby on Rails", "HTML-scraping", "Watir", "Nokogiri", "background tasks", "Sidekiq", "Devise gem auth",
+        "Ruby on Rails", "HTML-scraping", "Watir", "Nokogiri", "Sidekiq background tasks", "Devise gem auth",
         "PostgreSQL", "Heroku"
       ],
       link: { href: "https://goats-guide.herokuapp.com/", label: "goats-guide.herokuapp.com"},
+      inlineLink: { href: "https://projects.invisionapp.com/share/YRQX2W587PM", label: "here." },
       github: {href: "https://github.com/killeraliens/goats-guide", label: "github.com/killeraliens/goats-guide"}
     },
     // {
