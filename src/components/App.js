@@ -12,7 +12,7 @@ import PdfDownload from './PdfDownload';
 function App() {
 
   return (
-    <div className="App">
+    <div className="App live">
       <nav className="live-only download-nav">
         <PdfDownload path={cvPdf}/>
       </nav>
