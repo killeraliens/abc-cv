@@ -26,19 +26,6 @@ export default {
     website: {preLabel: 'www', href: 'https://alexandrabrinn.com', label:'alexandrabrinn.com', targetBlank: true}
   },
   projects: [
-    // {
-    //   title: "Doctors Near Me",
-    //   text: "Doctors Near Me is an app that locates and displays medical professionals based on your location, insurance plan, or specialty search inputs. \
-    //   This project utilizes OOJS & constructor functions to pull doctor info from highly nested JSON objects, \
-    //   as well as ES 2017 features to sequence multiple API calls for its filter results. ",
-    //   stack: "Built with Better Doctor API, HTML5, CSS, jQuery, JavaScript, Google Maps JavaScript API, \
-    //     Google Geocoding and Reverse Geocoding APIs",
-    //   stackSkills: [
-    //     "HTML5", "CSS", "jQuery", "JavaScript", "Better Doctor API", "Google Maps JavaScript API", "Google Geocoding", "Reverse Geocoding APIs"
-    //   ],
-    //   link: {href: "https://killeraliens.github.io/doctors-near-me", label: "killeraliens.github.io/doctors-near-me"},
-    //   github: {href: "https://github.com/killeraliens/doctors-near-me", label: "github.com/killeraliens/doctors-near-me"}
-    // },
     {
       title: "Goat's Guide (pivot design)",
       text: `If you know about an upcoming concert, fest, or tour, share the flier on Goat's Guide - a DIY bulletin board for poster artwork and event information. \n` +
@@ -65,20 +52,13 @@ export default {
         along with custom background tasks/Sidekiq to collect event data. Uses Devise gem for authentication. \
         PostgreSQL database. Deployed with Heroku.",
       stackSkills: [
-        "Ruby on Rails", "HTML-scraping", "Watir", "Nokogiri", "Sidekiq background tasks", "Devise gem auth",
+        "Ruby on Rails", "HTML-scraping", "Watir", "Nokogiri", "Sidekiq bg tasks", "Devise auth",
         "PostgreSQL", "Heroku"
       ],
       link: { href: "https://goats-guide.herokuapp.com/", label: "goats-guide.herokuapp.com"},
       inlineLink: { href: "https://projects.invisionapp.com/share/YRQX2W587PM", label: "here." },
       github: {href: "https://github.com/killeraliens/goats-guide", label: "github.com/killeraliens/goats-guide"}
-    },
-    // {
-    //   title: "Excuse Engine",
-    //   text: "An app that generates excuses for you based on your location. A great experience in teamwork while using Github/Heroku. Thanks to Janie, Maddie, Mark.",
-    //   stack: "Built with Ruby on Rails, JavaScript, traffic & London transport APIs, HTML and CSS",
-    //   link: {href: "http://www.excuse-engine.com/", label: "excuse-engine.com"},
-    //   github: {href: "https://github.com/maddielewis/excuse-engine", label: "github.com/maddielewis/excuse-engine"}
-    // },
+    }
   ],
   courses: [
     {title: "Thinkful. JavaScript, Node Fullstack Engineering Program", date: "May 2019 - Feb 2020"},
