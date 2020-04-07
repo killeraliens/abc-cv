@@ -78,6 +78,10 @@ html, body, #root, .App {
    padding: 8px;
 }
 
+.footer span {
+  text-align: center;
+  width: 100%;
+}
 
 .App.live .contact-ul, .App.live .date {
   font-size: 12px;
