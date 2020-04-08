@@ -11,10 +11,10 @@ export default {
     'Figma', 'Whimsical', 'Mindnode', 'AutoCad', 'user interviews & testing',
     'branding & creative content'
   ],
-  intro: "Alexandra Campbell - AKA Ali. Designer gone full stack web developer.",
-  about: "Dedicated programmer coming from a background in industrial design and graphics. \
-  I love scripting digital experiences for people and can offer a range of both creative and technical skills. \
-  Always ready to work with any new tools for the job.",
+  intro: `Alexandra Campbell - AKA Ali. Designer gone full stack web developer.`,
+  about: `Dedicated programmer coming from a background in industrial design and graphics. ` +
+    `I love scripting digital experiences for people and can offer a range of both creative and technical skills. ` +
+    `Always ready to work with any new tools for the job.`,
   profileImg: {src: "./assets/alexandra-brinn-profile.jpg", alt: "Portrait of Alexandra"},
   contact: {
     name: "ALEXANDRA BRINN CAMPBELL",
@@ -44,13 +44,13 @@ export default {
     },
     {
       title: "Goat's Guide MVP",
-      text: "Goat’s Guide is a heavy metal event & venue database concept as well as an ongoing study in UX design. \
-        I am currently reworking this project using React, Express, and Node.js to reduce app loading time, \
-        and improve user experience while encouraging more complete and user-sourced event data. \
-        Check out the early Invision prototype ",
-      stack: "This version is built with Ruby on Rails, and utilizes HTML-scraping gems such as Watir and Nokogiri, \
-        along with custom background tasks/Sidekiq to collect event data. Uses Devise gem for authentication. \
-        PostgreSQL database. Deployed with Heroku.",
+      text: `Goat’s Guide is a heavy metal event & venue database concept as well as an ongoing study in UX design.` +
+        `I am currently reworking this project using React, Express, and Node.js to reduce app loading time,` +
+        `and improve user experience while encouraging more complete and user-sourced event data.` +
+        `Check out the early Invision prototype `,
+      stack: `This version is built with Ruby on Rails, and utilizes HTML-scraping gems such as Watir and Nokogiri,` +
+        `along with custom background tasks/Sidekiq to collect event data. Uses Devise gem for authentication.` +
+        `PostgreSQL database. Deployed with Heroku.`,
       stackSkills: [
         "Ruby on Rails", "HTML-scraping", "Watir", "Nokogiri", "Sidekiq bg tasks", "Devise auth",
         "PostgreSQL", "Heroku"
@@ -71,8 +71,8 @@ export default {
       date: 'Apr 2015 - Jul 2018',
       title: 'Burgeon Group',
       role: 'Design Project Manager',
-      text: 'Burgeon group is a niche design & build firm with a stellar international reputation for the concept, design, and fabrication of children’s experience in the public library space. \
-        My role as design project manager included coordination between  client , design, and fabrication departments.  I worked closely with the CEO/lead designer contributing to client communications, design, and marketing, as well as executed the technical drafting, construction & installation plan documents for our inhouse fabrication teams.',
+      text: `Burgeon group is a niche design & build firm with a stellar international reputation for the concept, design, and fabrication of children’s experience in the public library space. ` +
+        `My role as design project manager included coordination between  client , design, and fabrication departments.  I worked closely with the CEO/lead designer contributing to client communications, design, and marketing, as well as executed the technical drafting, construction & installation plan documents for our inhouse fabrication teams.`,
       textBullets: [
         'Managed projects through a complete lifecycle by coordinating with stakeholders, including clients, designers, and fabrication departments.',
         'Supported spatial design, client communications and presentations, marketing content, and file management.',
@@ -106,8 +106,8 @@ export default {
       date: '2009 - 2013',
       title: 'Ah Diós',
       role: ' Freelance Graphics & Branding',
-      text: 'Collaborating with three others in web, film, and UX backgrounds. \
-        Brand development and various projects in graphic, signage, web, and packaging for Visual+Intent, Cartel Coffee Lab, Request Manufacturing, Sooh Media +',
+      text: `Collaborating with three others in web, film, and UX backgrounds. ` +
+        `Brand development and various projects in graphic, signage, web, and packaging for Visual+Intent, Cartel Coffee Lab, Request Manufacturing, Sooh Media +`,
       textBullets: [
         'Collaborated with a small team in the areas of web, film, branding, and UX design.',
         'Supported brand development through signage, web, and packaging graphics for Visual+Intent, Cartel Coffee Lab, Request Manufacturing, and Sooh Media.'
