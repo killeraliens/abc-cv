@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 export default function ProjectTitle({title, link, role}) {
   const roleTitle = role
@@ -13,5 +14,21 @@ export default function ProjectTitle({title, link, role}) {
     <div className="ProjectTitle">
       <h3 >{title}{roleTitle}{linkText}</h3>
     </div>
+  )
+}
+
+ProjectTitle.defaultProps = {
+  title: 'Sample Project Title'
+}
+
+ProjectTitle.propTypes = {
+  projectsArray: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      link: PropTypes.shape({
+        href: PropTypes.string,
+        label: PropTypes.string
+      })
+    })
   )
 }
