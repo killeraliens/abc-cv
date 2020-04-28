@@ -51,7 +51,7 @@ function App() {
       </main>
 
       <footer className="footer live-only">
-        <IconNav contact={store.contact}/>
+        <IconNav contactObject={store.contact}/>
         <span>Made with <a href="https://github.com/killeraliens/abc-cv" aria-label="link to abc-cv template repo" target="_blank" rel="noopener noreferrer">abc-cv</a> template by killeraliens.</span>
       </footer>
 

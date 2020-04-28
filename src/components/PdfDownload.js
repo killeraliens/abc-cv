@@ -1,15 +1,14 @@
 import React, { useState, useEffect} from 'react'
+import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
 
 export default function PdfDownload ({ path }) {
   const [fileSize, setFileSize] = useState('')
 
-
   useEffect(() => {
-    const getSize = (href) => {
+    const getSize = () => {
       let http = new XMLHttpRequest()
-
       http.open('HEAD', path, true)
       http.onreadystatechange = function () {
         if (this.readyState === this.DONE) {
@@ -30,4 +29,8 @@ export default function PdfDownload ({ path }) {
       download my CV {`(pdf ${fileSize / 1000} kb)`}
     </a>
   )
+}
+
+PdfDownload.propTypes = {
+  path: PropTypes.string.isRequired
 }

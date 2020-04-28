@@ -8,7 +8,7 @@ export default function ContactSection({ contactObject }) {
         <li><b>{contactObject.name}</b></li>
         {contactObject.location ? <li><b>{contactObject.location}</b></li> : null }
         {contactObject.phone ? <li><b>{contactObject.phone}</b></li> : null}
-        { contactObject.email
+        {contactObject.email
           ? <li>
               <b>email </b>
               <a href={`mailto:${contactObject.email}`} aria-label="link to email" >{contactObject.email}</a>
@@ -50,15 +50,15 @@ ContactSection.propTypes = {
     email: PropTypes.string,
     github: PropTypes.shape({
       href: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired // your handle is a good label
+      label: PropTypes.string.isRequired
     }),
     linkedin: PropTypes.shape({
       href: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired // your handle is a good label
+      label: PropTypes.string.isRequired
     }),
     website: PropTypes.shape({
       href: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired // your handle is a good label
+      label: PropTypes.string.isRequired
     })
   })
 }
