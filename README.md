@@ -5,7 +5,7 @@ An 8.5" x 11" PDF resume generator that you can also deploy on the web. Download
 [https://killeraliens.github.io/abc-cv](https://killeraliens.github.io/abc-cv/)
 
 ### For Developers
-Use as a template for your own print and web CVs.
+Use as a template for your own print and responsive web CVs.
 
 1. To copy my template clone this repo with `git clone git@github.com:killeraliens/abc-cv.git`.
 2. Install dependencies with `npm install`.
