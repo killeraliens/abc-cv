@@ -4,34 +4,6 @@ An 8.5" x 11" PDF resume generator that you can also deploy on the web. Download
 
 [https://killeraliens.github.io/abc-cv](https://killeraliens.github.io/abc-cv/)
 
-<!-- ## Screenshots & Usage -->
-
-<!-- ### Live Version
-View my CV. Download it! Formatted for mobile viewing too.
-[Template CV](https://killeraliens.github.io/abc-cv/)
-
-Deployed resume in desktop format.
-<div>
-  <kbd>
-    <img src="./src/assets/cv-desktop.png" alt="'live' deployed resume desktop format screenshot">
-  </kbd>
-</div>
-<br/>
-Deployed resume in mobile format.
-<div>
-  <kbd>
-    <img src="./src/assets/cv-mobile.png" alt="'live' resume mobile format screenshot">
-  </kbd>
-</div>
-<br/>
-Downloadable PDF format created.
-<div>
-  <kbd>
-    <img src="./src/assets/cv-pdf.png" alt="'resume pdf format screenshot">
-  </kbd>
-</div>
-<br/> -->
-
 ### For Developers
 Use as a template for your own print and web CVs.
 
