@@ -1,15 +1,14 @@
-# CV of Alexandra Brinn Campbell
+# ABC CV Template
 
-I am a designer gone fullstack web developer and this is my resume.
-Created with React and Pupeteer. See instructions below if you are a developer and would like to use this as a template for your own CV.
+An 8.5" x 11" PDF resume generator that you can also deploy on the web. Download the generated PDF from the live site.
+
 [https://killeraliens.github.io/abc-cv](https://killeraliens.github.io/abc-cv/)
 
+<!-- ## Screenshots & Usage -->
 
-## Screenshots & Usage
-
-### Live Version
+<!-- ### Live Version
 View my CV. Download it! Formatted for mobile viewing too.
-[Alexandra Brinn Campbell's CV](https://killeraliens.github.io/abc-cv/)
+[Template CV](https://killeraliens.github.io/abc-cv/)
 
 Deployed resume in desktop format.
 <div>
@@ -31,11 +30,10 @@ Downloadable PDF format created.
     <img src="./src/assets/cv-pdf.png" alt="'resume pdf format screenshot">
   </kbd>
 </div>
-<br/>
-
+<br/> -->
 
 ### For Developers
-Use as a template for your own print and web CV.
+Use as a template for your own print and web CVs.
 
 1. To copy my template clone this repo with `git clone git@github.com:killeraliens/abc-cv.git`.
 2. Install dependencies with `npm install`.
